@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='vi'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project Demo</title>
+    <link rel="stylesheet" href="css/lesson3_style.css">
+    <link rel="stylesheet" href="css/lesson4_style.css">
+</head>
+
+<body>
+    <h1>____Bài 1: Chào mừng bạn đến với Project JavaScript!____</h1>
+
+    <p id="output">Đang cho JavaScript chạy...</p>
+
+    <button type="button" onclick="document.getElementById('output').style.fontSize='35px'">Set fontSize</button>
+
+    <button type="button" onclick="document.getElementById('output').style.display='none'">Hide Text</button>
+
+    <button type="button" onclick="document.getElementById('output').style.display='block'">Show Text</button>
+
+    <h1>____Bài 2: Chèn mã JavaScript vào thẻ "script"____</h1>
+    <h2>Bài này cho biết "script" có thể được tham khảo 3 cách sử dụng khác nhau:</h2>
+    <p>1. với 1 URL đầy đủ(1 địa chỉ web đầy đủ) [ ví dụ: src="https://www.w3schools.com/js/myScript.js" ]</p>
+    <p>2. với 1 file path để liên kết đến link js [ ví dụ: src="/js/myScript.js" ]</p>
+    <p>3. Không có đừng dẫn nào [ ví dụ: src="myScript.js" ] </p>
+
+    <h4 id="textChanged">Nếu bạn Tap vào button "Thay đổi Text từ JS" ở dưới sẽ gán text với nôi dung khác trong
+        JavaScript</h4>
+
+    <button type="button" onclick="setText()">Thay đổi Text từ JS</button>
+
+    <h1>____Bài 3: Hiển thị JavaScript trong HTML____</h1>
+    <h2>Bài này cho biết JavaScript có thể "hiển thị" dữ iệu theo nhiều cách khách nhau, và gồm 4 cách dưới đây:</h2>
+    <h4>1. Viết vào 1 phần tử HTML, sử dụng <strong id="text_orangered_color">innerHTML</strong> or <strong
+            id="text_orangered_color">innerText</strong></h4>
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">innerHTML</span>:</p>
+    <p id="id_l3_ex1_1"></p>
+
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">innerText</span>:</p>
+    <p id="id_l3_ex1_2"></p>
+
+    <h4>2. Viết vào đầu ra HTML bằng cách sử dụng <strong id="text_orangered_color">document.append()</strong></h4>
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">document.append</span>:</p>
+    <p id="id_l3_ex2">Tôi được hiển thị bằng <span id="text_orangered_color">document.append</span>(5 + 6): </p>
+
+    <h4>3. Viết vào một hộp cảnh báo, sử dụng <strong id="text_orangered_color">window.alert()</strong></h4>
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">window.alert()</span>:</p>
+    <button id="id_l3_ex3" onclick="showWindowAlertMessage()">Hiển thị với window</button>
+
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">alert()</span>:</p>
+    <button id="id_l3_ex3" type="button" onclick="showAlertMessage()">Hiển thị hộp thoại</button>
+
+    <h4>4. Viết vào bảng điều khiển trình duyệt, sử dụng <strong id="text_orangered_color">console.log()</strong></h4>
+    <p id="note_tite">Lưu ý: <i id="note_content">F12 trên bàn phím của bạn sẽ kích hoạt gỡ lỗi, Sau đó chọn "Console"
+            trong menu gỡ lỗi</i></p>
+    <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">console.log()</span>:</p>
+    <button id="id_l3_ex4" type="button" , onclick="showConsoleLog()">Show console log</button>
+
+    <h1>____Bài 4: JavaScript Syntax<span style="font-size: 14pt; font-weight: 400;"> (cú pháp)</span>____</h1>
+
+
+    <div id="footer"></div>
+    <!-- Mã script -->
+    <script src="/js/display.js"></script>
+    <script src="/js/actions.js"></script>
+</body>
+
+</html>
