@@ -1,0 +1,64 @@
+#editors_container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 150px;
+}
+
+.codePane {
+    text-align: left;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.CodeMirror {
+    height: calc(100% - 30px);
+    border: 1px solid #eee;
+}
+
+iframe {
+    flex: 1;
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.displayResults {
+    text-align: left;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 118px;
+}
+
+.parentContainer {
+    text-align: right;
+    justify-content: flex-start;
+}
+
+.titleContailer {
+    display: flex;
+}
+
+.exampleTitle {
+    text-align: start;
+    margin-left: 10px;
+    color: cadetblue;
+}
+
+.buttonCodeRun {
+    padding: 10px;
+    margin-right: 725px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}

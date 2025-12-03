@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Project Demo</title>
+    <title>Khoá Học JavaScript</title>
+    <!-- import library link style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+    <link rel="stylesheet" href="css/lesson_playground.css">
     <link rel="stylesheet" href="css/lesson3_style.css">
     <link rel="stylesheet" href="css/lesson4_style.css">
+
+
 </head>
 
 <body>
+    <!-- ===============================Bài 1=============================== -->
     <h1>____Bài 1: Chào mừng bạn đến với Project JavaScript!____</h1>
 
     <p id="output">Đang cho JavaScript chạy...</p>
@@ -19,6 +26,8 @@
     <button type="button" onclick="document.getElementById('output').style.display='none'">Hide Text</button>
 
     <button type="button" onclick="document.getElementById('output').style.display='block'">Show Text</button>
+
+    <!-- ===============================Bài 2=============================== -->
 
     <h1>____Bài 2: Chèn mã JavaScript vào thẻ "script"____</h1>
     <h2>Bài này cho biết "script" có thể được tham khảo 3 cách sử dụng khác nhau:</h2>
@@ -30,6 +39,8 @@
         JavaScript</h4>
 
     <button type="button" onclick="setText()">Thay đổi Text từ JS</button>
+
+    <!-- ===============================Bài 3=============================== -->
 
     <h1>____Bài 3: Hiển thị JavaScript trong HTML____</h1>
     <h2>Bài này cho biết JavaScript có thể "hiển thị" dữ iệu theo nhiều cách khách nhau, và gồm 4 cách dưới đây:</h2>
@@ -58,13 +69,56 @@
     <p id="ex_text_padding_30">- ví dụ <span id="text_orangered_color">console.log()</span>:</p>
     <button id="id_l3_ex4" type="button" , onclick="showConsoleLog()">Show console log</button>
 
-    <h1>____Bài 4: JavaScript Syntax<span style="font-size: 14pt; font-weight: 400;"> (cú pháp)</span>____</h1>
+    <!-- ===============================Bài 4=============================== -->
 
+    <h1>____Bài 4: JavaScript Syntax<span class="lesson4Subtitle"> (cú pháp)</span>____</h1>
+    <div class="lesson4Padding">
+        <h3>JavaScript Values</h3>
+        <p>Cú pháp JavaScript định nghĩa 2 loại kiểu giá trị:</p>
+        <div class="lesson4SubTextPadding">
+            <p><strong>- Literals</strong> <span>Không thay đổi giá trị</span></p>
+            <p><strong>- Variables</strong> <span>Thay đổi giá trị</span></p>
+        </div>
+
+        <h3>JavaScript Literals<span class="lesson4Subtitle"> (Không thay đổi giá trị)</span></h3>
+        <p>Các quy tắc cú pháp quan trọng nhất cho<strong> literals </strong>(Không thay đổi giá trị) là:</p>
+        <p><strong>Numbers </strong>được viết có hoặc không có<strong> decimals </strong>(số thập phân)</p>
+
+        <div class="parentContainer">
+            <button class="buttonCodeRun" type="button" onclick="runCode()">Run Code</button>
+            <h3 class="exampleTitle">Example</h3>
+            <div id="editors_container">
+                <div class="codePane">
+                    <h3>HTML</h3>
+                    <textarea id="lesson4_literals_ex1_html_editor_area"></textarea>
+                </div>
+                <div class="codePane">
+                    <h3>JavaScript</h3>
+                    <textarea id="lesson4_literals_ex1_js_editor_area"></textarea>
+                </div>
+                <div class="displayResults">
+                    <h3>Kết quả</h3>
+                    <iframe id="output_frame"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================================================== -->
 
     <div id="footer"></div>
+
+    <!-- import library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <!-- ======================================================================================================================== -->
+
     <!-- Mã script -->
     <script src="/js/display.js"></script>
     <script src="/js/actions.js"></script>
+    <script src="/js/lesson4.js"></script>
 </body>
 
 </html>
