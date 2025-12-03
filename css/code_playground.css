@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#editors-container {
+    display: flex;
+    flex-grow: 1;
+    height: 200px;
+    overflow: hidden;
+}
+
+.code-pane {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+}
+
+/* Điều chỉnh chiều cao cho CodeMirror */
+.CodeMirror {
+    height: calc(100% - 30px);
+    border: 1px solid #eee;
+}
+
+iframe {
+    flex: 1;
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.display-results {
+    height: 40vh;
+    border-top: 2px solid #333;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

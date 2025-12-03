@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='vi'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Playground với Syntax Highlighting</title>
+    <!-- import library link style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+    <!-- ======================================================================================================================== -->
+    <link rel="stylesheet" href="css/code_playground.css">
+
+</head>
+
+<body>
+
+    <div id="editors-container">
+        <div class="code-pane">
+            <h3>HTML</h3>
+            <textarea id="html-editor-area"></textarea>
+        </div>
+        <div class="code-pane">
+            <h3>CSS</h3>
+            <textarea id="css-editor-area"></textarea>
+        </div>
+        <div class="code-pane">
+            <h3>JavaScript</h3>
+            <textarea id="js-editor-area"></textarea>
+        </div>
+    </div>
+
+    <div class="display-results">
+        <h3 style="padding: 10px;">Kết quả</h3>
+        <iframe id="output-frame"></iframe>
+    </div>
+
+    <button onclick="runCode()">Chạy Code</button>
+
+    <!-- import library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <!-- ======================================================================================================================== -->
+
+    <script src="/js/code_playground.js"></script>
+</body>
+
+</html>
