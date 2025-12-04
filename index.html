@@ -68,54 +68,54 @@
 
     <!-- ===============================Bài 4=============================== -->
 
-    <h1>____Bài 4: JavaScript Syntax<span class="lesson4Subtitle"> (cú pháp)</span>____</h1>
-    <div class="lesson4Padding">
+    <h1>____Bài 4: JavaScript Syntax<span class="lessonSubtitle"> (cú pháp)</span>____</h1>
+    <div class="lessonPadding">
         <h3>JavaScript Values</h3>
         <p>Cú pháp JavaScript định nghĩa 2 loại kiểu giá trị:</p>
-        <div class="lesson4SubTextPadding">
+        <div class="lessonSubTextPadding">
             <p><strong>- Literals</strong> <span>Không thay đổi giá trị</span></p>
             <p><strong>- Variables</strong> <span>Thay đổi giá trị</span></p>
         </div>
 
-        <h3>JavaScript Literals<span class="lesson4Subtitle"> (Không thay đổi giá trị)</span></h3>
-        <div class="lesson4Padding">
+        <h3>JavaScript Literals<span class="lessonSubtitle"> (Không thay đổi giá trị)</span></h3>
+        <div class="lessonPadding">
             <p>- ví dụ: Nếu bạn khởi tạo <strong>const</strong> thì giá trị của nó sẽ không thay đổi khi bạn gán lại giá
                 trị đó.</p>
         </div>
         <p>Các quy tắc cú pháp quan trọng nhất cho<strong> literals </strong>là:</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p><strong>Numbers </strong>được viết có hoặc không có<strong> decimals </strong>(số thập phân)</p>
             <p><strong>Strings </strong>là chữ được viết trong dấu nháy kép hoặc nháy đơn</p>
         </div>
 
-        <h3>JavaScript Variables<span class="lesson4Subtitle"> (Thay đổi giá trị)</span></h3>
-        <div class="lesson4Padding">
+        <h3>JavaScript Variables<span class="lessonSubtitle"> (Thay đổi giá trị)</span></h3>
+        <div class="lessonPadding">
             <p>- ví dụ: Nếu bạn khởi tạo <strong>let</strong> thì giá trị của nó sẽ thay đổi khi bạn gán lại giá
                 trị đó.</p>
         </div>
         <p><strong>Variables </strong>là nơi chứa các giá trị dữ liệu. Phải được xác định bằng những tên duy nhất</p>
 
-        <h3>JavaScript Identifiers<span class="lesson4Subtitle"> (Thay đổi giá trị)</span></h3>
+        <h3>JavaScript Identifiers<span class="lessonSubtitle"> (Thay đổi giá trị)</span></h3>
         <p>Một<strong> identifier </strong>là tên bạn đặt cho một variable.</p>
         <p>Quy tắc nhận dạng:</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p>- Phải được bắt đầu bằng dấu: <strong>_</strong> or <strong>$</strong></p>
             <p>- Có thể chứa các chữ số sau ký tự đầu tiên</p>
             <p>- Không thể là từ khoá dành riêng (<trong>let, const, if</trong> ..v..v..)</p>
             <p>- Phân biệt chữ hoa chữ thường</p>
         </div>
 
-        <h3>JavaScript Operators<span class="lesson4Subtitle"> (Toán tử)</span></h3>
+        <h3>JavaScript Operators<span class="lessonSubtitle"> (Toán tử)</span></h3>
         <p>JavaScript toán tử gán <strong> = </strong> là gán giá trị cho <strong>variables</strong> </p>
         <p>JavaScript sử dụng số học toán tử<strong class="operators"> + _ * / </strong>để tính toán các giá trị</p>
 
-        <h3>JavaScript Expressions<span class="lesson4Subtitle"> (Biểu thức)</span></h3>
+        <h3>JavaScript Expressions<span class="lessonSubtitle"> (Biểu thức)</span></h3>
         <p>Biểu thức là sự kết hợp của các giá trị<strong> variables </strong>và<strong> operators </strong>để tính toán
             thành một gía trị.</p>
         <p>Biểu thức cũng có thể bao gồm<strong> variable </strong> <i>(ví dụ:<strong> x * 10 </strong>hoặc<strong>
                     "John" + " " + "Doe"</strong>)</i></p>
 
-        <h3>JavaScript is Case Sensitives<span class="lesson4Subtitle"> (phân biệt chữ hoa chữ thường)</span></h3>
+        <h3>JavaScript is Case Sensitives<span class="lessonSubtitle"> (phân biệt chữ hoa chữ thường)</span></h3>
         <p>JavaScript<strong> identifiers </strong>là phân biệt chữ hoa chữ thường</p>
         <p><strong>Variables </strong><span class="variable">lastName </span>và<span class="variable"> lastname
             </span>là các<strong> variables </strong>khác nhau</p>
@@ -123,36 +123,106 @@
         <h3>JavaScript and Camel Case</h3>
         <p>Trong lịch sử, các lập trình viên đã sử dụng nhiều cách khác nhau để nối nhiều từ thành một tên biến:</p>
         <p><strong>Hyphens </strong>(dấu gạch nối):</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p>first-name, last-name, master-card, inter-city.</p>
         </div>
 
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <div class="noteBox">
+                <h4>Lưu ý:</h4>
                 <p>Dấu gạch nối không được phép trong JavaScript. Chúng được dành riêng cho toán tử phép trừ.</p>
             </div>
         </div>
 
         <p><strong>Underscore</strong>(dấu gạch dưới):</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p>first_name, last_name, master_card, inter_city.</p>
         </div>
 
         <p><strong>Upper Camel Case (Pascal Case):</strong>(viết hoa chữ cái đầu tiên của các từ):</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p>FirstName, LastName, MasterCard, InterCity.</p>
         </div>
 
         <p><strong>Lower Camel Case:</strong>(viết thường chữ cái đầu tiên của từ, còn lại các chữ cái đầu tiên của các
             từ là viết hoa):</p>
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <p>firstName, lastName, masterCard, interCity.</p>
         </div>
 
-        <div class="lesson4Padding">
+        <div class="lessonPadding">
             <div class="noteBox">
+                <h4>Lưu ý:</h4>
                 <p>Các lập trình viên JavaScript có xu hướng sử dụng<strong> Lower Camel Case.</strong></p>
             </div>
+        </div>
+    </div>
+
+    <!-- ===============================Bài 4=============================== -->
+
+    <h1>____Bài 5: JavaScript Statements<span class="lessonSubtitle"> (câu lệnh)</span>____</h1>
+    <div class="lessonPadding">
+        <h3>JavaScript Programs</h3>
+        <p>Một chương trình máy tính là một danh sách "<strong>instructions</strong><i> (hướng dẫn)</i>" được máy tính
+            "<strong>executed</strong><i> (thược thi)</i>".</p>
+        <p>Những hướng dẫn lập trình này được gọi là<strong> statements</strong><i> (câu lệnh)</i>.</p>
+        <p>Các câu lệnh được thực thi từng câu một theo đúng thứ tự như chúng được viết.</p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Trong HTML, các chương trình JavaScript được thực thi bởi browser</p>
+        </div>
+
+        <h3>JavaScript Statements</h3>
+        <p>Câu lệnh JavaScript bao gồm: Values, Operators, Expressions, Keywords, and Comments</p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>JavaScript programs (và JavaScript statements) thông thường được gọi là JavaScript code</p>
+        </div>
+
+        <h3>Semicolons<span class="lessonSubtitle"> (dấu chấm phẩy) </span><strong class="operators">;</strong></h3>
+        <p>Dấu chấm phẩy phân cách các câu lệnh JavaScript.</p>
+        <p>Thêm dấu chấm phẩy vào cuối mỗi câu lệnh thực thi.</p>
+        <p>Khi được phân tách bằng dấu chấm phẩy, được phép có nhiều câu lệnh trên một dòng.</p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Trên website, bạn có thể thấy các ví dụ không có dấu chấm phẩy.</p>
+            <p>Kết thúc câu lệnh với dấu chấm phẩy là không bẳt buộc, nhưng rất được khuyến khích.</p>
+        </div>
+
+        <h3>JavaScript White Space</h3>
+        <p>JavaScript bỏ qua nhiều khoảng trắng. Bạn có thể thêm dấu khoảng trắng vào tệp lệnh của mình để dễ đọc hơn.
+        </p>
+        <p>Một cách thực hành tốt lè nên đặt khoảng trắng vào xung quanh toán tử (<strong class="operators"> = + - * /
+            </strong>)</p>
+
+        <h3>JavaScript Line Length and Line Breaks<spna class="lessonSubtitle"> (Độ dài của dòng và ngắt dòng)</spna>
+        </h3>
+        <p>Để dễ đọc nhất, các lập trình viên thường tránh các dòng mã dài hơn 80 ký tự.</p>
+        <p>Nếu một câu lệnh JavaScript dài quá 80 ký tự trên một dòng, nơi tốt nhất để dừng là sau một toán tử.</p>
+
+        <h3>JavaScript Code Blocks<span class="lessonSubtitle"> (Khối mã trong ngoặc nhọn<strong class="operators">
+                    {}</strong>)</span></h3>
+        <p>Câu lệnh JavaScript có thể nhóm lại với nhau trong các khối mã, bên trong dấu ngoặc nhọn <strong
+                class="operators">{</strong>...<strong class="operators">}</strong></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Trong JavaScript với các câu lệnh được viết bên trong khối mã, nên sử dụng thêm hai dấu cách thụt đầu dòng
+                cho khối mã đó.</p>
+        </div>
+
+        <h3>JavaScript Keywords</h3>
+        <p>Các câu lệnh JavaScript thường được bắt dầu bằng một<strong> keyword </strong>để xác định hành động JavaScript sẽ được thực hiện.</p>
+        <p>Dưới đây là một số<strong> keyword </strong>mà chúng ta tìm hiểu trong bài này:</p>
+        <div class="boxBorder">
+            <p><strong>var</strong>: Khai báo một variable</p>
+            <p><strong>let</strong>: Khai báo một variable khối</p>
+            <p><strong>const</strong>: Khai báo một khối không thay đổi giá trị</p>
+            <p><strong>if</strong>: Đánh dấu một khối câu lệnh sẽ được thực thi theo một điều kiện</p>
+            <p><strong>switch</strong>: Đánh dấu một khối câu lệnh sẽ được thực thi trong các trường hợp khác nhau</p>
+            <p><strong>for</strong>: Đánh dấu một khối câu lệnh sẽ được thực thi trong vòng lặp</p>
+            <p><strong>function</strong>: khai báo một function<i> (hàm/chức năng)</i></p>
+            <p><strong>return</strong>: Thoát khỏi một function</p>
+            <p><strong>try</strong>: Thực hiện xử lý lỗi đối với một khối câu lệnh</p>
         </div>
     </div>
 
