@@ -43,11 +43,37 @@ body {
     margin-left: 30px;
 }
 
-#note_content{
+#note_content {
     color: cornflowerblue;
     text-decoration: underline;
 }
 
 #footer {
     margin-bottom: 200px;
+}
+
+.lesson4Subtitle {
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.lesson4Padding {
+    padding: 0 30px 0 30px;
+}
+
+.lesson4SubTextPadding {
+    padding: 0 50px 0 30px;
+}
+
+.operators {
+    color: indianred;
+}
+
+.variable {
+    color: indianred;
+}
+
+.noteBox {
+    padding: 16px;
+    background-color: #ffffcc;
 }
