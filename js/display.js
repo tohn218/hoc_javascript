@@ -1,7 +1,4 @@
 // ---------------------------------Bài 1-----------------------------------------
-console.log("Hello World! Đây là code JS của tôi.");
-
-// Thay đổi nội dung của thẻ có id="output" trong file HTML
 document.getElementById('output').innerHTML = 'Xin chào từ JavaScript!';
 // ---------------------------------Bài 3-----------------------------------------
 // ex1

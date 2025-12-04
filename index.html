@@ -8,10 +8,7 @@
     <!-- import library link style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
-    <link rel="stylesheet" href="css/lesson_playground.css">
-    <link rel="stylesheet" href="css/lesson3_style.css">
-    <link rel="stylesheet" href="css/lesson4_style.css">
-
+    <link rel="stylesheet" href="css/lesson_style.css">
 
 </head>
 
@@ -81,25 +78,80 @@
         </div>
 
         <h3>JavaScript Literals<span class="lesson4Subtitle"> (Không thay đổi giá trị)</span></h3>
-        <p>Các quy tắc cú pháp quan trọng nhất cho<strong> literals </strong>(Không thay đổi giá trị) là:</p>
-        <p><strong>Numbers </strong>được viết có hoặc không có<strong> decimals </strong>(số thập phân)</p>
+        <div class="lesson4Padding">
+            <p>- ví dụ: Nếu bạn khởi tạo <strong>const</strong> thì giá trị của nó sẽ không thay đổi khi bạn gán lại giá
+                trị đó.</p>
+        </div>
+        <p>Các quy tắc cú pháp quan trọng nhất cho<strong> literals </strong>là:</p>
+        <div class="lesson4Padding">
+            <p><strong>Numbers </strong>được viết có hoặc không có<strong> decimals </strong>(số thập phân)</p>
+            <p><strong>Strings </strong>là chữ được viết trong dấu nháy kép hoặc nháy đơn</p>
+        </div>
 
-        <div class="parentContainer">
-            <button class="buttonCodeRun" type="button" onclick="runCode()">Run Code</button>
-            <h3 class="exampleTitle">Example</h3>
-            <div id="editors_container">
-                <div class="codePane">
-                    <h3>HTML</h3>
-                    <textarea id="lesson4_literals_ex1_html_editor_area"></textarea>
-                </div>
-                <div class="codePane">
-                    <h3>JavaScript</h3>
-                    <textarea id="lesson4_literals_ex1_js_editor_area"></textarea>
-                </div>
-                <div class="displayResults">
-                    <h3>Kết quả</h3>
-                    <iframe id="output_frame"></iframe>
-                </div>
+        <h3>JavaScript Variables<span class="lesson4Subtitle"> (Thay đổi giá trị)</span></h3>
+        <div class="lesson4Padding">
+            <p>- ví dụ: Nếu bạn khởi tạo <strong>let</strong> thì giá trị của nó sẽ thay đổi khi bạn gán lại giá
+                trị đó.</p>
+        </div>
+        <p><strong>Variables </strong>là nơi chứa các giá trị dữ liệu. Phải được xác định bằng những tên duy nhất</p>
+
+        <h3>JavaScript Identifiers<span class="lesson4Subtitle"> (Thay đổi giá trị)</span></h3>
+        <p>Một<strong> identifier </strong>là tên bạn đặt cho một variable.</p>
+        <p>Quy tắc nhận dạng:</p>
+        <div class="lesson4Padding">
+            <p>- Phải được bắt đầu bằng dấu: <strong>_</strong> or <strong>$</strong></p>
+            <p>- Có thể chứa các chữ số sau ký tự đầu tiên</p>
+            <p>- Không thể là từ khoá dành riêng (<trong>let, const, if</trong> ..v..v..)</p>
+            <p>- Phân biệt chữ hoa chữ thường</p>
+        </div>
+
+        <h3>JavaScript Operators<span class="lesson4Subtitle"> (Toán tử)</span></h3>
+        <p>JavaScript toán tử gán <strong> = </strong> là gán giá trị cho <strong>variables</strong> </p>
+        <p>JavaScript sử dụng số học toán tử<strong class="operators"> + _ * / </strong>để tính toán các giá trị</p>
+
+        <h3>JavaScript Expressions<span class="lesson4Subtitle"> (Biểu thức)</span></h3>
+        <p>Biểu thức là sự kết hợp của các giá trị<strong> variables </strong>và<strong> operators </strong>để tính toán
+            thành một gía trị.</p>
+        <p>Biểu thức cũng có thể bao gồm<strong> variable </strong> <i>(ví dụ:<strong> x * 10 </strong>hoặc<strong>
+                    "John" + " " + "Doe"</strong>)</i></p>
+
+        <h3>JavaScript is Case Sensitives<span class="lesson4Subtitle"> (phân biệt chữ hoa chữ thường)</span></h3>
+        <p>JavaScript<strong> identifiers </strong>là phân biệt chữ hoa chữ thường</p>
+        <p><strong>Variables </strong><span class="variable">lastName </span>và<span class="variable"> lastname
+            </span>là các<strong> variables </strong>khác nhau</p>
+
+        <h3>JavaScript and Camel Case</h3>
+        <p>Trong lịch sử, các lập trình viên đã sử dụng nhiều cách khác nhau để nối nhiều từ thành một tên biến:</p>
+        <p><strong>Hyphens </strong>(dấu gạch nối):</p>
+        <div class="lesson4Padding">
+            <p>first-name, last-name, master-card, inter-city.</p>
+        </div>
+
+        <div class="lesson4Padding">
+            <div class="noteBox">
+                <p>Dấu gạch nối không được phép trong JavaScript. Chúng được dành riêng cho toán tử phép trừ.</p>
+            </div>
+        </div>
+
+        <p><strong>Underscore</strong>(dấu gạch dưới):</p>
+        <div class="lesson4Padding">
+            <p>first_name, last_name, master_card, inter_city.</p>
+        </div>
+
+        <p><strong>Upper Camel Case (Pascal Case):</strong>(viết hoa chữ cái đầu tiên của các từ):</p>
+        <div class="lesson4Padding">
+            <p>FirstName, LastName, MasterCard, InterCity.</p>
+        </div>
+
+        <p><strong>Lower Camel Case:</strong>(viết thường chữ cái đầu tiên của từ, còn lại các chữ cái đầu tiên của các
+            từ là viết hoa):</p>
+        <div class="lesson4Padding">
+            <p>firstName, lastName, masterCard, interCity.</p>
+        </div>
+
+        <div class="lesson4Padding">
+            <div class="noteBox">
+                <p>Các lập trình viên JavaScript có xu hướng sử dụng<strong> Lower Camel Case.</strong></p>
             </div>
         </div>
     </div>
@@ -118,7 +170,6 @@
     <!-- Mã script -->
     <script src="/js/display.js"></script>
     <script src="/js/actions.js"></script>
-    <script src="/js/lesson4.js"></script>
 </body>
 
 </html>
