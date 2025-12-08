@@ -83,3 +83,38 @@ body {
     border: 1px solid #ccc;
     display: inline-block;
 }
+
+.defineBox {
+    padding: 16px;
+    background-color: #04AA6D33;
+    border-radius: 8px;
+}
+
+.rowBox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.box1 {
+    margin-right: 400px;
+}
+
+.textColorString {
+    color: green;
+}
+
+.textKeywordJavascript {
+    color: blue;
+}
+
+.exBox {
+    padding: 40px;
+    background-color: #E7E9EB;
+    border-radius: 8px;
+}
+
+.exGreen {
+    background-color: white;
+    padding: 1px 0 1px 12px;
+    border-left: 4px solid green;
+}

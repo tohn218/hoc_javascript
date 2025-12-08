@@ -230,23 +230,221 @@
 
     <!-- ===============================Bài 6=============================== -->
 
-    <h1>____Bài 6: JavaScript Variables<span class="lessonSubtitle"> (Biến = vùng chứa dữ liệu)</span>____
-    </h1>
+    <h1>____Bài 6: JavaScript Variables<span class="lessonSubtitle"> (Biến = vùng chứa dữ liệu)____</span></h1>
+    <div class="lessonPadding">
+        <h2>JavaScript Variables</h2>
+        <div class="defineBox">
+            <h3>Variables = Data Containers<span class="lessonSubtitle"> (Vùng chứa dữ liệu)</span></h3>
+            <h4>javascript variables<span> là nơi chứa dữ liệu</span></h4>
+            <p>JavaScript variables có thể được khai báo theo 4 cách:</p>
+            <div class="rowBox">
+                <div class="box1">
+                    <h3>Modern JavaScript</h3>
+                    <p>- Sử dụng<strong class="operators"> let</strong></p>
+                    <p>- Sử dụng<strong class="operators"> const</strong></p>
+                </div>
+                <div>
+                    <h3>Older JavaScript</h3>
+                    <p>- Sử dụng<strong class="operators"> var </strong>(Không được đề xuất)</p>
+                    <p>- Tự động<i> (gán giá trị nhưng không khai báo) </i>(Không được đề xuất)</p>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Các biến là <strong>labels</strong> cho các giá trị.</p>
+            <p>Biến là nơi chứa dữ liệu</p>
+        </div>
 
-    <!-- ==================================================================== -->
+        <h2>JavaScript Identifiers</h2>
+        <p>Các biến được xác định bằng<strong> unique names </strong> <i>(tên duy nhất)</i> được gọi là
+            <strong>identifier</strong><i> (định danh)</i>.
+        </p>
+        <p>Tên có thể đặt ngắn như <strong>x</strong>, <strong>y</strong>, <strong>z</strong>.</p>
+        <p>Tên có thể mang tính mô tả <strong>age</strong>, <strong>sum</strong>, <strong>carName</strong>.</p>
+        <p>Nguyên tắc để xây dựng tên<strong> indentifier </strong> là:</p>
+        <p class="lessonSubTextPadding">- Tên có thể chứa các chữ cái, chữ số, dấu gạch dưới và ký hiệu dollar.</p>
+        <p class="lessonSubTextPadding">- Tên phải bắt đầu bằng một chữ cái, dấu $ hoặc dấu gạch dưới (_).</p>
+        <p class="lessonSubTextPadding">- Tên có phân biệt chữ hoa, chữ thường (<strong>X</strong><i> (chữ hoa) </i>khác
+            với <strong>x</strong><i> (chữ thường)</i>)</p>
+        <p class="lessonSubTextPadding">- Các từ khoá dành riêng cho JavaScript không thể được sử dụng làm tên: <i>(ví
+                dụ: <span class="operators">const</span>, <span class="operators">let</span>, <span
+                    class="operators">var</span>, <span class="operators">if</span>, <span class="operators">for</span>,
+                <span class="operators">switch</span>, ...v..v..)</i></p>
 
-    <div id="footer"></div>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Số không được phép làm ký tự đầu tiên trong tên.</p>
+            <p>Bằng cách này JavaScript có thể dễ dàng phân biệt<strong> identifier </strong>từ những con số.</p>
+        </div>
 
-    <!-- import library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
-    <!-- ======================================================================================================================== -->
+        <h2>JavaScript Underscore (_)</h2>
+        <p>JavaScript coi dấu gạch dưới là một chữ cái.</p>
+        <p><strong>identifier </strong>chứa _ là tên biến hợp lệ.</p>
+        <p>Một quy ước giữa các <strong>lập trình viên chuyên nghiệp</strong> là bắt đầu tên bằng dấu gạch dưới cho các
+            biến là <strong>private</strong></p>
 
-    <!-- Mã script -->
-    <script src="/js/display.js"></script>
-    <script src="/js/actions.js"></script>
+        <h2>JavaScript Dollar Sign $</h2>
+        <p>JavaScript cũng coi ký hiệu dollar là một chữ cái.</p>
+        <p><strong>identifier</strong> chứa <strong>$</strong> là tên biến hợp lệ.</p>
+        <p>Sử dụng <strong>$</strong> không phổ biến lắm trong JavaScript, nhưng các <strong>lập trình viên chuyên
+                nghiệp</strong> thường sử dụng nó làm bí danh cho hàm main trong thư viện JavaScript.</p>
+
+        <h2>Declaring JavaScript Variables</h2>
+        <p><strong>Tạo một biến</strong> trong JavaScript được gọi là <strong>khai báo</strong> môt biến.</p>
+        <p>Khai báo một biến JavaScript bằng từ khoá <strong class="operators">let</strong> hoặc từ khoá <strong
+                class="operators">const</strong>.</p>
+
+        <h2>Declaring a Variable Using <strong class="operators">let</strong></h2>
+        <p>Sau khi khai báo, các biến không có giá trị (về mẳt kỹ thuật nó <span class="operators">undefined</span>
+            không được xác định).</p>
+        <p>Để gán giá trị cho biến, hãy sử dụng dấu bằng: <i>(ví dụ: carName = <span
+                    class="textColorString">"Novar"</span>)</i></p>
+        <p>Thông thường bạn sẽ gán một giá trị cho biến khi khai báo nó.</p>
+
+        <h2>Declaring a Variable Using <span>const</span></h2>
+        <p>Luôn luôn sử dụng <strong class="operators">const</strong> Nếu các giá trị không thay đổi.</p>
+
+        <h2>Declaring a Variable Automatically</h2>
+        <p>Các biến không được khai báo là <strong>automatically declared</strong> <i>(tự động được khai báo)</i> khi sử
+            dụng lần đầu.</p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Đó là một cách lập trình tốt để khai báo tất cả các biến ở đầu tệp lệnh.</p>
+        </div>
+
+        <h2>Declaring a Variable Using <span class="operators">var</span></h2>
+        <p>Từ khoá <span class="operators">var</span> đã được sử dụng trong tất cả các mã JavaScript trước năm 2015.</p>
+        <p>Từ khoá <span class="operators">let</span> và <span class="operators">const</span>là từ khoá mới được sử dụng
+            đối với JavaScript vào năm 2015.</p>
+
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <h2>Khi nào nên sử dụng <strong class="operators">var</strong>, <strong class="operators">let</strong> hoặc
+                <strong class="operators">const</strong>?
+            </h2>
+            <p>Đó là một cách lập trình tốt để khai báo tất cả các biến ở đầu tệp lệnh.</p>
+            <p>1. Luôn khai báo biến.</p>
+            <p>2. Luôn sử dụng <span class="operators">const</span> nếu giá trị khởi tạo không thay đổi.</p>
+            <p>3. Luôn sử dụng <span class="operators">const</span> nếu không thay đổi đối với (Array và Objects).</p>
+            <p>4. Chỉ sử dụng <span class="operators">let</span> nếu không thể sử dụng <span
+                    class="operators">const</span>.</p>
+            <p>5. Không bao giờ sử dụng <span class="operators">var</span> nếu có thể sử dụng <span
+                    class="operators">let</span> hoặc <span class="operators">const</span>.</p>
+        </div>
+
+        <h2>JavaScript Data Types</h2>
+        <p>Các biến JavaScript có thể chứa 8 <strong>datatypes</strong> <i>(kiểu dữ liệu)</i>, nhưng hiện tại hãy chỉ
+            nghĩ đến <strong>numbers</strong> và <strong>strings</strong>.</p>
+        <p><strong>Strings</strong> là văn bản được viết trong nháy kép hoặc nháy đơn.</p>
+        <p><strong>Numbbers</strong> được viết không có dấu nháy kép.</p>
+        <p>Nếu đặt số trong nháy kép hoặc nháy đơn, số đó sẽ được coi là <strong>string</strong> text.</p>
+
+        <h2>One Statement, Many Variables</h2>
+        <p>Bạn có thể khai báo nhiều biến trong một câu lệnh.</p>
+        <p>Bắt đầu câu lệnh với <span class="operators">let</span> hoặc <span class="operators">const</span> và phân
+            tách các biến bằng dấu phẩy:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> person = <span
+                        class="textColorString">"JavaScript"</span>, carName = <span
+                        class="textColorString">"Hello"</span>,
+                    price = <span class="operators">20</span>;
+                </p>
+            </div>
+        </div>
+        <p>Một khai báo có thể trải rộng trên nhiều dòng:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> person = <span
+                        class="textColorString">"JavaScript"</span>,</p>
+                <p>carName = <span class="textColorString"></span>"Hello",</p>
+                <p>price = <span class="operators">200</span>;</p>
+            </div>
+        </div>
+        <h2>The Assignment Operator</h2>
+        <p>Trong JavaScript, dấu bằng ( <strong class="operators">=</strong> ) là toán tử gán, không phải toán tử bằng.
+        </p>
+        <p>Điều này khác với đại số. Những điều sau đây không có ý nghĩa với đại số:</p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p>x = x + <span class="operators">5</span></p>
+            </div>
+        </div>
+        <p>Trong JavaScript, tuy nhiên, nó hoàn toàn hợp lý: nó gán giá trị của x + 5 cho x.</p>
+        <p>(Nó tính giá trị của x + 5 và đặt kết quả vào x. Giá trị của x được tăng thêm 5).</p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Toán tử bằng được viết như sau <strong class="operators">==</strong> trong JavaScript</p>
+        </div>
+
+        <h2>JavaScript Arithmetic</h2>
+        <p>Giống như đại số, bạn có thể thực hiện phép tính số học với các biến JavaScript bằng cách sử dụng các toán tử
+            như <strong class="operators">=</strong> và <strong>+</strong>:</p>
+
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span> + <span
+                        class="operators">2</span> + <span class="operators">3</span>;</p>
+            </div>
+        </div>
+        <p>Bạn cũng có thể thêm chuỗi nhưng chuỗi sẽ được nối với nhau:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textColorString">"Hello"</span> +
+                    <span class="textColorString">" "</span> + <span class="textColorString">"Bạn"</span>
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Nếu bạn đặt một số trong dấu nháy kép, phần còn lại của có số sẽ được coi là <strong>strings</strong>, và
+                được nối với nhau.</p>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textColorString">"5"</span> +
+                    <span class="operators">2</span> + <span class="operators">3</span>
+                </p>
+            </div>
+            <p>Kết quả của việc thêm "5" + 2 + 3 là: 523</p>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span> +
+                    <span class="operators">3</span> + <span class="textColorString">"5"</span>
+                </p>
+            </div>
+            <p>Kết quả của việc cộng 2 + 3 + "5" là: 55</p>
+        </div>
+
+
+
+        <!-- ==================================================================== -->
+
+        <div id="footer"></div>
+
+        <!-- import library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+        <!-- ======================================================================================================================== -->
+
+        <!-- Mã script -->
+        <script src="/js/display.js"></script>
+        <script src="/js/actions.js"></script>
 </body>
 
 </html>
