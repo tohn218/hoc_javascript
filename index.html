@@ -427,24 +427,255 @@
             </div>
             <p>Kết quả của việc cộng 2 + 3 + "5" là: 55</p>
         </div>
+    </div>
 
+    <!-- ===============================Bài 7=============================== -->
 
+    <h1>____Bài 7: JavaScript Let<span class="lessonSubtitle"></span></h1>
+    <div class="lessonPadding">
+        <h3>JavaScript Let</h3>
+        <div class="defineBox">
+            <p>Từ khoá <span class="operators">let</span> được giới thiệu trong <a
+                    href="https://www.w3schools.com/js/js_es6.asp">ES6 (2015)</a></p>
+            <p>Các biến được khai báo bằng <span class="operators">let</span> có phạm vi khối.</p>
+            <p>Các biến được khai báo bằng <span class="operators">let</span> phải được khai báo trước khi sử dụng.</p>
+            <p>Các biến được khai báo bằng <span class="operators">let</span> không thể được khai báo lại trong cùng một
+                phạm vi.</p>
+        </div>
+    </div>
 
-        <!-- ==================================================================== -->
+    <div class="lessonPadding">
+        <h2>Block Scope</h2>
+        <p>Trước ES6 (2015), JavaScript không có <strong>Block Scope</strong></p>
+        <p>JavaScript đã có <strong>Global Scope</strong> và <strong>Function Scope</strong>.</p>
+        <p>ES6 đã giới thiệu hai từ khoá JavaScript mới: <span class="operators">let</span> và <span
+                class="operators">const</span>.</p>
+        <p>Hai từ khoá này được cung cấp <strong>Block Scope</strong> trong JavaScript:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <p>Các biến được khai báo trong khối {} không thể được truy cập từ bên ngoài khối:</p>
+            <div class="exGreen">
+                {
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">let</span> x = <span
+                        class="operators">2</span>;</p>
+                }
+                <p class="textComment">// x không thể được sủ dụng ở đây.</p>
+            </div>
+        </div>
 
-        <div id="footer"></div>
+        <h2>Global Scope</h2>
+        <p>Các biến được khai báo bằng <span class="operators">var</span> luôn luôn có <strong>Global Scope</strong>.
+        </p>
+        <p>Các biến được khái báo bằng <span class="operators">var</span> từ khoá KHÔNG thể có block scope:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                {
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">var</span> x = <span
+                        class="operators">2</span>;</p>
+                }
+                <p class="textComment">// x CÓ THỂ được sủ dụng ở đây.</p>
+            </div>
+        </div>
 
-        <!-- import library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
-        <!-- ======================================================================================================================== -->
+        <h2>Cannot be Redeclared</h2>
+        <p>Các biến được xác định bằng <span class="operators">let</span> KHÔNG thể được khai báo lại.</p>
+        <p>Bạn không thể vô tình khai báo lại một biến được khai báo bằng <span class="operators">let</span>.</p>
+        <div class="exBox">
+            <p>Với <span class="operators">let</span> bạn <strong>không thể</strong> làm điều này:</p>
+            <div class="exRed">
+                {
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">let</span> x = <span
+                        class="textColorString">"Hello Chang"</span>;</p>
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">let</span> x = <span
+                        class="operators">0</span>;</p>
+                }
+            </div>
+        </div>
+        <p>Các biến được khái báo bằng <span class="operators">var</span><strong>có thể</strong>được khai báo lại.</p>
+        <div class="exBox">
+            <p>Với <span class="operators">var</span> bạn <strong>có thể</strong> làm điều này:</p>
+            <div class="exGreen">
+                {
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">var</span> x = <span
+                        class="textColorString">"Hello Chang"</span>;</p>
+                <p class="lessonSubTextPadding"><span class="textKeywordJavascript">var</span> x = <span
+                        class="operators">0</span>;</p>
+                }
+            </div>
+        </div>
 
-        <!-- Mã script -->
-        <script src="/js/display.js"></script>
-        <script src="/js/actions.js"></script>
+        <h2>Redeclaring Variables</h2>
+        <p>Việc khai báo lại một biến bằng từ khoá <span class="operators">var</span> có thể gây ra vấn đề.</p>
+        <p>Khai báo lại một biến bên trong một khối cũng sẽ khai báo lại biến bên ngoài khối đó.</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">10</span>;</p>
+                <p class="textComment">// Ở đây x là 10.</p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>;</p>
+
+                    <p class="textComment">// Ở đây x là 2.</p>
+                </div>
+                }
+                <p class="textComment">// Ở đây x là 2</p>
+            </div>
+            <p>Kết quả của việc khai báo lại x trong block scope <span class="textKeywordJavascript">var</span> x =
+                <span class="operators">2</span>; cuối cùng là: 2
+            </p>
+        </div>
+        <p>Khai báo lại một biến bằng từ khoá <span class="textKeywordJavascript">let</span> có thể giải quyết bằng vấn
+            đề này.</p>
+        <p>Khai báo lại một biến bên trong một khối sẽ không khai báo lại biến bên ngoài khối:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p class="textComment">// Ở đây x là 10.</p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>;</p>
+
+                    <p class="textComment">// Ở đây x là 2.</p>
+                </div>
+                }
+
+                <p class="textComment">// Ở đây x là 10</p>
+            </div>
+            <p>Kết quả của việc khai báo lại x trong block scope <span class="textKeywordJavascript">let</span> x =
+                <span class="operators">2</span>; cuối cùng là: 10
+            </p>
+        </div>
+        <h2>What is Good?</h2>
+        <p><span class="operators">let</span> và <span class="operators">const</span> có <strong>block scope</strong>.
+        </p>
+        <p><span class="operators">let</span> và <span class="operators">const</span> không thể <strong>khai báo
+                lại</strong>.</p>
+        <p><span class="operators">let</span> và <span class="operators">const</span> phải được <strong>khai
+                báo</strong> trước khi sử dụng.</p>
+        <p><span class="operators">let</span> và <span class="operators">const</span> không <strong>not bind</strong>
+            với <span class="operators">this</span>.</p>
+        <p><span class="operators">let</span> và <span class="operators">const</span> là <strong>not hoisted</strong>.
+        </p>
+
+        <h2>What is Not Good?</h2>
+        <p><span class="operators">var</span> không cần phải khai báo.</p>
+        <p><span class="operators">var</span> là hoisted.</p>
+        <p><span class="operators">var</span> binds to this.</p>
+
+        <h2>Browser Support</h2>
+        <p>Từ khoá <span class="operators">let</span> và <span class="operators">const</span> không được hỗ trợ trong
+            <strong>Internet Explorer 11</strong> trở về trước.
+        </p>
+        <p>Bảng sau xác định các phiên bản trình duyệt đầu tiên được hỗ trợ đầy đủ:</p>
+        <img src="assets/images/explorer_suppeort.png" , width="1200" height="150">
+
+        <h3>Redeclaring</h3>
+        <p>Việc khai báo lại một biến JavaScript bằng <span class="operators">var</span> được phép ở bất kỳ đâu trong
+            chương trình:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>;</p>
+                <p class="textComment">// Tại đây x là 2.</p>
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">3</span>;</p>
+                <p class="textComment">// Tại đây x là 3.</p>
+            </div>
+            <p>Kết quả của việc khai báo lại <span class="textKeywordJavascript">var</span> x =
+                <span class="operators">3</span>; cuối cùng là: 3
+            </p>
+        </div>
+        <p>Với <span class="operators">let</span> KHÔNG được phép khai báo lại một biến trong cùng một khối:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">3</span>; <span
+                        class="textComment" style="margin-left: 30px;"> // KHÔNG ĐƯỢC PHÉP</span></p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">3</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // KHÔNG ĐƯỢC PHÉP</span></p>
+                </div>
+                }
+                <p></p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                    <p><span class="textKeywordJavascript">var</span> x = <span class="operators">3</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // KHÔNG ĐƯỢC PHÉP</span></p>
+                </div>
+                }
+            </div>
+        </div>
+        <p>Khi báo lại một biến với <span class="operators">let</span>, trong một khối khác, là được phép:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">3</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                </div>
+                }
+                <p></p>
+                {
+                <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">4</span>; <span
+                            class="textComment" style="margin-left: 30px;"> // ĐƯỢC PHÉP</span></p>
+                </div>
+                }
+            </div>
+            <p>Kết quả của việc khai báo lại <span class="textKeywordJavascript">var</span> x =
+                <span class="operators">3</span>; cuối cùng là: 3
+            </p>
+
+        </div>
+        <h2>Let Hoisting</h2>
+        <p>Các biến được định nghĩa bằng <span class="operators">var</span> được đưa lên trên cùng và có thể được khởi
+            tạo bất kỳ lúc nào.</p>
+        <p>Ý nghĩa: Bạn có thể sử dụng biến trước khi nó được khai báo:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p>carName = <span class="textColorString">"Hello"</span></p>
+                <p><span class="textKeywordJavascript">var</span> carName;</p>
+            </div>
+        </div>
+        <p>Các biến được định nghĩa bằng<span>let</span>cũng được đưa lên đầu khối, nhưng không được khởi tạo.</p>
+        <p>Ý nghĩa: Sử dụng biến <span class="operators">let</span> trước khi nó được khai báo sẽ dẫn đến kết quả <span
+                style="color: red;">ReferenceError</span>:</p>
+        <div class="exErrorBox">
+            <h3>Ví dụ:</h3>
+            <div class="exRed">
+                <p>carName = <span class="textColorString">"Hello"</span></p>
+                <p><span class="textKeywordJavascript">let</span> carName;</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================================================== -->
+
+    <div id="footer"></div>
+
+    <!-- import library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <!-- ======================================================================================================================== -->
+
+    <!-- Mã script -->
+    <script src="/js/display.js"></script>
+    <script src="/js/actions.js"></script>
 </body>
 
 </html>

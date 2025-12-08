@@ -113,8 +113,23 @@ body {
     border-radius: 8px;
 }
 
+.exErrorBox {
+    padding: 40px;
+    background-color: #ffdddd !important;
+    border-radius: 8px;
+}
+
 .exGreen {
     background-color: white;
     padding: 1px 0 1px 12px;
     border-left: 4px solid green;
+}
+.exRed {
+    background-color: white;
+    padding: 1px 0 1px 12px;
+    border-left: 4px solid red;
+}
+
+.textComment {
+    color: slategray;
 }
