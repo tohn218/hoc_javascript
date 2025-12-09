@@ -940,6 +940,230 @@
         </div>
     </div>
 
+    <!-- ===============================Bài 9=============================== -->
+
+    <h1>____Bài 9: JavaScript Datatypes<span class="lessonSubtitle"> (Kiểu dữ liệu)</span></h1>
+    <div class="lessonPadding">
+        <h2>JavaScript has 8 Datatypes</h2>
+        <p>Một biến JavaScript có thể giữ <strong>8 kiểu dữ liệu</strong>:</p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>String</td>
+                    <td>Một văn bản gồm các ký tự được đặt trong dấu nháy kép</td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td>Một số đại diện cho một giá trị toán học</td>
+                </tr>
+                <tr>
+                    <td>Bigint</td>
+                    <td>Một số đại diện cho một số nguyên lớn</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>Một kiểu dữ liệu đại diện cho <strong>true</strong> hoặc <strong>false</strong></td>
+                </tr>
+                <tr>
+                    <td>Object</td>
+                    <td>Tập hợp các cặp dữ liệu { key: value }</td>
+                </tr>
+                <tr>
+                    <td>Undefined</td>
+                    <td>Một biến nguyên thuỷ không có giá trị được gán</td>
+                </tr>
+                <tr>
+                    <td>Null</td>
+                    <td>Một giá trị nguyên thuỷ biểu thị sự vắng mặt của đối tượng</td>
+                </tr>
+                <tr>
+                    <td>Symbol</td>
+                    <td>Một mã định danh duy nhất và nguyên thuỷ</td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textComment">// String</span></p>
+                <p><span class="textKeywordJavascript">let</span> color = <span class="textColorString">"Black"</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> name = <span class="textColorString">"Jone"</span>;
+                </p>
+                <p><span class="textComment">// Number</span></p>
+                <p><span class="textKeywordJavascript">let</span> color = <span class="operators">16</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> name = <span class="operators">7.4</span>;</p>
+                <p><span class="textComment">// BigInt</span></p>
+                <p><span class="textKeywordJavascript">let</span> x = <span
+                        class="operators">1234567890123456789012345</span>n;</p>
+                <p><span class="textKeywordJavascript">let</span> y = BigInt(<span
+                        class="operators">1234567890123456789012345</span>);</p>
+                <p><span class="textComment">// Boolean</span></p>
+                <p><span class="textKeywordJavascript">let</span> isOk = <span
+                        class="textKeywordJavascript">true</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> isError = <span
+                        class="textKeywordJavascript">false</span>;</p>
+                <p><span class="textComment">// Object</span></p>
+                <p><span class="textKeywordJavascript">const</span> person = { username : <span
+                        class="textColorString">"Jone wick"</span>, location : <span class="textColorString">"new
+                        Yourk"</span> };</p>
+                <p><span class="textComment">// Array object</span></p>
+                <p><span class="textKeywordJavascript">const</span> district = [<span
+                        class="textColorString">"Katana"</span>, <span class="textColorString">"Tokyo"</span>, <span
+                        class="textColorString">"Japan"</span>];
+                </p>
+                <p><span class="textComment">// Date object</span></p>
+                <p><span class="textKeywordJavascript">const</span> date = <span
+                        class="textKeywordJavascript">new</span> Date( <span
+                        class="textColorString">"2025-12-09"</span>);
+                </p>
+                <p><span class="textComment">// Undefined</span></p>
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">null</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="textKeywordJavascript">null</span>;
+                </p>
+                <p><span class="textComment">// Symbol</span></p>
+                <p><span class="textKeywordJavascript">let</span> x = Symbol();
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y =Symbol();
+                </p>
+            </div>
+        </div>
+        <h2>The typeof Operator<span class="lessonSubtitle"> (Kiểu toán tử)</span></h2>
+        <p>Bạn có thể sử dụng <strong>toán tử</strong> <span class="operators">typeof</span> của JavaScript để tìm xem
+            loại biến trong JavaScript là kiểu dữ liệu gì.</p>
+        <p>Toán tử <span class="operators">typeof</span> trả về kiểu của <strong> biến</strong> hoặc <strong>biểu
+                thức</strong>:</p>
+
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">typeof</span> <span class="textColorString">""</span>; <span
+                        class="textComment" style="margin-left: 150px;">// Returns string</span></p>
+                <p><span class="textKeywordJavascript">typeof</span> <span class="textColorString">"Jone"</span>; <span
+                        class="textComment" style="margin-left: 110px;">// Returns string</span></p>
+                </p>
+                <p><span class="textKeywordJavascript">typeof</span> <span class="textColorString">"New Yourk"</span>;
+                    <span class="textComment" style="margin-left: 60px;">// Returns string</span>
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">typeof</span> <span class="operators">0</span> <span
+                        class="textComment" style="margin-left: 115px;">// Returns number</span></p>
+                <p><span class="textKeywordJavascript">typeof</span> <span class="operators">314</span> <span
+                        class="textComment" style="margin-left: 94px;">// Returns number</span></p>
+                </p>
+                <p><span class="textKeywordJavascript">typeof</span> <span class="operators">3.14</span>
+                    <span class="textComment" style="margin-left: 85px;">// Returns number</span>
+                </p>
+                <p><span class="textKeywordJavascript">typeof</span> (<span class="operators">3</span>)
+                    <span class="textComment" style="margin-left: 95px;">// Returns number</span>
+                </p>
+                <p><span class="textKeywordJavascript">typeof</span> (<span class="operators">3</span> + <span
+                        class="operators">4</span>)
+                    <span class="textComment" style="margin-left: 60px;">// Returns number</span>
+                </p>
+            </div>
+        </div>
+
+        <h2>JavaScript Strings</h2>
+        <p>Một string <i>(một text string)</i> là một loạt các ký tự như <span class="textColorString">"Nguyễn Nam Trang
+                Linh"</span>.</p>
+        <p>Strings được viết dưới dấu nháy kép hoặc nháy đơn:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textComment">// Sử dụng dấu nháy kép:</span></p>
+                <p><span class="textKeywordJavascript">let</span> name = <span class="textColorString">"Hoàng Hạ Hạng
+                        Nhược"</span>; </p>
+                <p><span class="textComment">// Sử dụng dấu nháy đơn:</span></p>
+                <p><span class="textKeywordJavascript">let</span> name = <span class="textColorString">'Lý Trúc
+                        Mai'</span>; </p>
+            </div>
+        </div>
+        <p>Bạn có thể sử dụng dấu nháy kép bên trong một <strong>string</strong>, miễn là chúng không khớp với nháy kép
+            xung quanh <strong>string</strong></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textComment">// trích dẫn đơn bên trong dấu nháy kép:</span></p>
+                <p><span class="textKeywordJavascript">let</span> answer = <span class="textColorString">"It's
+                        alright"</span>; </p>
+                <p><span class="textComment">// dấu nháy đơn bên trong dấu nháy kép:</span></p>
+                <p><span class="textKeywordJavascript">let</span> answerName = <span class="textColorString">"my name
+                        is 'Lý Trúc
+                        Mai'"</span>; </p>
+                <p><span class="textComment">// dấu nháy kép bên trong dấu nháy đơn:</span></p>
+                <p><span class="textKeywordJavascript">let</span> whatYourName = <span class="textColorString">'my name
+                        is "Thập Trúc Phong"'</span>; </p>
+            </div>
+        </div>
+        <h2>JavaScript Numbers</h2>
+        <p>Tất cả các só JavaScript được lưu trữ dưới dạng <strong>decimal</strong> <i>(số thập phân)</i> dấu chấm
+            (trong lập trình gọi là dấu phẩy động).</p>
+        <p><strong>Numbers</strong> có thể được viết với số thập phân, hoặc không có số thập phân:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textComment">// Với số thập phân:</span></p>
+                <p><span class="textKeywordJavascript">let</span> x1 = <span class="operators">34.00</span>; </p>
+                <p><span class="textComment">// Không có số thập phân:</span></p>
+                <p><span class="textKeywordJavascript">let</span> x2 = <span class="operators">34</span>; </p>
+            </div>
+        </div>
+
+        <h2>Exponential Notation <span class="lessonSubtitle">(ký hiệu số mũ)</span></h2>
+        <p>Các số cực lớn hoặc cực nhỏ có thể được viết bằng ký hiệu khoa học (số mũ):</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">123e5</span>; <span
+                        class="textComment" style="margin-left: 50px;">// 12300000</span></p>
+                <p><span class="textKeywordJavascript">let</span> z = <span class="operators">134e-5</span>; <span
+                        class="textComment" style="margin-left: 45px;">// 0.00123</span></p>
+            </div>
+        </div>
+        <h2>JavaScript Booleans</h2>
+        <p><strong>booleans</strong> chỉ có thể có một trong hai giá trị: <strong>true</strong> hoặc
+            <strong>false</strong>
+        </p>
+        <p>Giá trị <strong>boolean</strong> của một biếu thức là cơ sở để so sánh JavaScript</p>
+
+        <h2>Datatype undefined <span class="lessonSubtitle">(kiểu dữ liệu không xác định)</span></h2>
+        <p>Trong các chương trình máy tính, các biến thường được khai báo mà không có giá trị. Giá trị có thể là cái gì
+            đó phải được tính toán, hoặc thứ gì đó sẽ được cung cấp sau, chẳng hạn như thông tin đầu vào của người dùng.
+        </p>
+        <p>Một biến không có giá trị có kiểu dữ liệu <span class="operators">undefined</span>.</p>
+        <p>Một biến không có giá trị cũng có giá trị <span class="operators">undefined</span>.</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> carName ;</p>
+            </div>
+        </div>
+
+        <h2>Empty Values</h2>
+        <p>Một giá trị trống không liên quan gì đến <span class="operators">undefined</span>.</p>
+        <p>Một <strong>empty string</strong>có cả giá trị pháp lý và loại.</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> car = <span class="textColorString">""</span>; <span class="textComment">// Giá trị là "", typeof là <strong>string</strong></span>.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================================================================== -->
 
     <div id="footer"></div>
