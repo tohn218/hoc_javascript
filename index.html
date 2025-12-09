@@ -662,6 +662,284 @@
         </div>
     </div>
 
+    <!-- ===============================Bài 8=============================== -->
+
+    <h1>____Bài 8: JavaScript Const<span class="lessonSubtitle"></span></h1>
+    <div class="lessonPadding">
+        <h2>JavaScript Const</h2>
+        <div class="defineBox">
+            <p>Từ khoá <span class="operators">const</span> được giới thiệu tronng <a
+                    href="https://www.w3schools.com/js/js_es6.asp">ES6 (2015)</a></p>
+            <p>Các biến được định nghĩa bằng <span class="operators">const</span> không thể được <strong>khai báo
+                    lại</strong>.</p>
+            <p>Các biến được định nghĩa bằng <span class="operators">const</span> không thể đươc <strong>gán
+                    lại</strong>.</p>
+            <p>Các biến được định nghĩa bằng <soan class="operators">const</soan> Có <strong>Block Scope</strong></p>
+        </div>
+
+        <h2>Cannot be Reassigned</h2>
+        <p>Một biến được định nghĩa bằng từ khoá <span class="operators">const</span> không thể được gán lại:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">const</span> PI = <span class="operators">3.1454534</span>;</p>
+                <p>PI = <span class="operators">3.14</span>; <span class="textComment" style="margin-left: 30px;">//
+                        Điều này sẽ báo lỗi.</span></p>
+                <p>PI = PI + <span class="operators">10</span>; <span class="textComment" style="margin-left: 30px;">//
+                        Điều này cũng sẽ báo lỗi.</span></p>
+            </div>
+        </div>
+
+        <h2>Must be Assigned</h2>
+        <p>Các biến <span class="operators">const</span> trong JavaScript phải được gán một giá trị khi chúng được khai
+            báo:</p>
+        <div class="exBox">
+            <h3>Đúng</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">const</span> PI = <span class="operators">3.14159265359</span>;
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exErrorBox">
+            <h3>Không đúng</h3>
+            <div class="exRed">
+                <p><span class="textKeywordJavascript">const</span> PI;</p>
+                <p>PI = <span class="operators">3.14159265359</span>;</p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h2>Khi nào nên sử dụng <span class="operators">const</span> trong JavaScript?</h2>
+            <h3>Luôn khai báo một biến với<span class="operators"> const </span>khi bạn biết rằng không nên thay đổi giá
+                trị:</h3>
+            <div>Sử dụng <span class="operators">const</span> khi bạn khai báo:</div>
+            <div class="lessonSubTextPadding">
+                <p>- Một <strong>Array</strong> <i>(mảng mới)</i>.</p>
+                <p>- Một <strong>Object</strong> <i>(đôi tượng mới)</i>.</p>
+                <p>- Một <strong>Function</strong> <i>(Chức năng mới)</i>.</p>
+                <p>- Một <strong>RegExp</strong></p>
+            </div>
+        </div>
+
+        <h2>Constant Objects and Arrays</h2>
+        <p>Từ khoá <span class="operators">const</span> hơi gây hiểu nhầm:</p>
+        <p>Nó không định nghĩa một giá trị <strong>constant</strong>. Nó định nghĩa một <strong>constant
+                reference</strong><i> (tham chiếu)</i> tới một giá trị.</p>
+        <p>Vì điều này bạn KHÔNG thể:</p>
+        <div class="lessonSubTextPadding">
+            <p>- Gán lại một giá trị <strong>constant</strong></p>
+            <p>- Tái chỉ định một mảng <strong>constant</strong></p>
+            <p>- Tái chỉ định một đối tượng <strong>constant</strong></p>
+            <p>Nhưng bạn CÓ THỂ:</p>
+            <p>- đổi các phần tử của mảng <strong>constant</strong></p>
+            <p>- đổi các thuộc tính của đối tượng<strong>constant</strong></p>
+        </div>
+
+        <h2>Constant Arrays</h2>
+        <p>Bạn có thể thay đổi phần tử của một mảng <strong>constant</strong>:</p>
+        <div class="exBox">
+            <h3>Không đúng</h3>
+            <div class="exGreen">
+                <p class="textComment">// Bạn có thể tạo một mảng <strong>constant</strong>:</p>
+                <p><span class="textKeywordJavascript">const</span> cars = [<span
+                        class="textColorString">"Window"</span>, <span class="textColorString">"MacOS"</span>, <span
+                        class="textColorString">"Linux"</span>];
+                </p>
+                <p class="textComment">// Bạn có thể thay đổi một <strong>element</strong>:</p>
+                <p>cars[<span class="operators">0</span>] = <span class="textColorString">"Web Site"</span>;</p>
+                <p class="textComment">// Bạn có thể thêm một <strong>element</strong>:</p>
+                <p>cars.push(<span class="textColorString">"IOS"</span>);</p>
+            </div>
+        </div>
+        <p>Nhưng bạn không thể gán lại mảng:</p>
+        <div class="exErrorBox">
+            <h3>Ví dụ:</h3>
+            <div class="exRed">
+                <p><span class="textKeywordJavascript">const</span> cars = [<span
+                        class="textColorString">"Window"</span>, <span class="textColorString">"MacOS"</span>, <span
+                        class="textColorString">"Linux"</span>];
+                <p>cars = [<span class="textColorString">"Hanoi"</span>, <span class="textColorString">"Saigon"</span>,
+                    <span class="textColorString">"Hue"</span>]; <span class="textComment" style="margin-left: 30px;">//
+                        Error</span>
+                </p>
+            </div>
+        </div>
+
+        <h2>Constant Objects</h2>
+        <p>Bạn có thể thay đổi các thuộc tính của <strong>constant</strong>:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p class="textComment">// Bạn có thể tạo một đối tượng <strong>constant</strong>:</p>
+                <p><span class="textKeywordJavascript">const</span> cars = {name:<span class="textColorString">"what
+                        your name"</span>, age:<span class="operators">30</span>, address:<span
+                        class="textColorString">"Hanoi"</span>};
+                </p>
+                <p class="textComment">// Bạn có thể thay đổi <strong>property</strong>:</p>
+                <p>cars.age = <span class="operators">18</span>;</p>
+                <p class="textComment">// Bạn có thể thêm một <strong>property</strong>:</p>
+                <p>cars.color = <span class="textColorString">"red"</span>;</p>
+            </div>
+        </div>
+        <p>Nhưng bạn KHÔNG thể gán lại đối tượng:</p>
+        <div class="exErrorBox">
+            <h3>Ví dụ:</h3>
+            <div class="exRed">
+                <p><span class="textKeywordJavascript">const</span> cars = {name:<span class="textColorString">"what
+                        your name"</span>, age:<span class="operators">30</span>, address:<span
+                        class="textColorString">"Hanoi"</span>};
+                </p>
+                <p>cars = {name:<span class="textColorString">"ZoRO"</span>, age:<span class="operators">20</span>,
+                    address:<span class="textColorString">"China"</span>}; <span class="textComment"
+                        style="margin-left: 30px;">// Error</span>
+                </p>
+            </div>
+        </div>
+
+        <h2>Block Scope</h2>
+        <p>Khai báo một biến với <span class="operators">const</span> cũng tương tự như <span
+                class="operators">let</span> khi nói đến <strong>Block Scope</strong>.</p>
+        <p>Trong ví dụ này, x được khai báo trong khối không giống với x được khai báo bên ngoài khối:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">const</span> x = <span class="operators">10</span>;</p>
+                <p class="textComment">// Ở đây x là 10.</p>
+                {<p class="lessonSubTextPadding"><span class="textKeywordJavascript">const</span> x = <span
+                        class="operators">2</span>;</p>
+                <p class="textComment" , style="margin-left: 30px;">// Ở đây x là 2.
+                </p>
+                }
+                <p class="textComment">// Ở đây x là 10. </p>
+            </div>
+        </div>
+
+        <h2>Redeclaring</h2>
+        <p><strong>Khai báo lại</strong> một biến <span class="operators">var</span> hoặc <span
+                class="operators">let</span> hiện có
+            thành <span class="operators">const</span>, trong cùng phạm vi, điều đó là không được phép:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 95px;">// Cho phép.</span>
+                </p>
+                <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left:75px;">// Không được phép.</span>
+                </p>
+                { <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 70px;">// Cho phép.</span>
+                    </p>
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 45px;">// Không được phép.</span>
+                    </p>
+                </div>}
+                <p></p>
+                { <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 45px;">// Cho phép.</span>
+                    </p>
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 45px;">// Không được phép.</span>
+                    </p>
+                </div>}
+            </div>
+        </div>
+        <p>
+            <strong>Gán lại</strong> một biến <span class="operators">const</span> hiện có, trong cùng phạm vi, điều đó
+            là
+            không được phép:
+        </p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 95px;">// Cho phép.</span>
+                </p>
+                <p>x = <span class="operators">2</span>; <span class="textComment" style="margin-left:145px;">// Không
+                        được phép.</span>
+                </p>
+                <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 115px;">// Không được phép.</span>
+                </p>
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 118px;">// Không được phép.</span>
+                </p>
+                <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 95px;">// Không được phép.</span>
+                </p>
+                { <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 95px;">// Cho phép.</span>
+                    </p>
+                    <p>x = <span class="operators">2</span>; <span class="textComment" style="margin-left:145px;">//
+                            Không
+                            được phép.</span>
+                    </p>
+                    <p><span class="textKeywordJavascript">var</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 115px;">// Không được phép.</span>
+                    </p>
+                    <p><span class="textKeywordJavascript">let</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 118px;">// Không được phép.</span>
+                    </p>
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                            class="textComment" style="margin-left: 95px;">// Không được phép.</span>
+                    </p>
+                </div>}
+            </div>
+        </div>
+        <p><strong>Khai báo lại</strong> một biến bằng <span class="operators">const</span> trong phạm vi khác, hoặc ở
+            khối khác, điều đó là được phép.</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">const</span> x = <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left:75px;">// Được phép.</span>
+                </p>
+                { <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">3</span>; <span
+                            class="textComment" style="margin-left: 45px;">// Được phép.</span>
+                    </p>
+                </div>}
+                <p></p>
+                { <div class="lessonSubTextPadding">
+                    <p><span class="textKeywordJavascript">const</span> x = <span class="operators">4</span>; <span
+                            class="textComment" style="margin-left: 45px;">// Được phép.</span>
+                    </p>
+                </div>}
+            </div>
+        </div>
+
+        <h2>Constant Hoisting</h2>
+        <p>Các biến được định nghĩa bằng <span class="operators">var</span> được <strong>hoisted</strong><i> (được đưa
+                lên sử dụng trước)</i> và có thể khởi tạo bất cứ lúc nào.</p>
+        <p><strong>Ý nghĩa</strong>: Bạn có thể sử dụng dùng biến trước khi nó được khai báo:</p>
+
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <p>Sử dụng điều này vẫn OK:</p>
+            <div class="exGreen">
+                <p>name = <span class="textColorString">"Jone"</span>;</p>
+                <p><span class="textKeywordJavascript">var</span> name;</span>
+                </p>
+            </div>
+        </div>
+        <p>Các biến được định nghĩa với <span class="operators">const</span> cũng là <strong>hoisted</strong><i> (được
+                đưa lên sử dụng trước)</i> lên đầu, nhưng nó không được khởi tạo.</p>
+        <p><strong>Ý nghĩa</strong>: sử dụng biến <span class="operators">const</span> trước khi nó được khai báo sẽ dẫn
+            đến lỗi <span class="textError">ReferenceError</span>:</p>
+        <div class="exErrorBox">
+            <h3>Ví dụ:</h3>
+            <div class="exRed">
+                <p> alert (name);</p>
+                <p><span class="textKeywordJavascript">const</span> name = <span class="textColorString">"Jone"</span>;
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================================================================== -->
 
     <div id="footer"></div>
