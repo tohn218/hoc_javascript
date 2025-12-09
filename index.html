@@ -431,7 +431,7 @@
 
     <!-- ===============================Bài 7=============================== -->
 
-    <h1>____Bài 7: JavaScript Let<span class="lessonSubtitle"></span></h1>
+    <h1>____Bài 7: JavaScript Let____</h1>
     <div class="lessonPadding">
         <h3>JavaScript Let</h3>
         <div class="defineBox">
@@ -664,7 +664,7 @@
 
     <!-- ===============================Bài 8=============================== -->
 
-    <h1>____Bài 8: JavaScript Const<span class="lessonSubtitle"></span></h1>
+    <h1>____Bài 8: JavaScript Const____</h1>
     <div class="lessonPadding">
         <h2>JavaScript Const</h2>
         <div class="defineBox">
@@ -942,7 +942,7 @@
 
     <!-- ===============================Bài 9=============================== -->
 
-    <h1>____Bài 9: JavaScript Datatypes<span class="lessonSubtitle"> (Kiểu dữ liệu)</span></h1>
+    <h1>____Bài 9: JavaScript Datatypes<span class="lessonSubtitle"> (Kiểu dữ liệu)</span>____</h1>
     <div class="lessonPadding">
         <h2>JavaScript has 8 Datatypes</h2>
         <p>Một biến JavaScript có thể giữ <strong>8 kiểu dữ liệu</strong>:</p>
@@ -1159,9 +1159,352 @@
         <div class="exBox">
             <h3>Ví dụ:</h3>
             <div class="exGreen">
-                <p><span class="textKeywordJavascript">let</span> car = <span class="textColorString">""</span>; <span class="textComment">// Giá trị là "", typeof là <strong>string</strong></span>.</p>
+                <p><span class="textKeywordJavascript">let</span> car = <span class="textColorString">""</span>; <span
+                        class="textComment">// Giá trị là "", typeof là <strong>string</strong></span>.</p>
             </div>
         </div>
+    </div>
+
+    <!-- ===============================Bài 10=============================== -->
+
+    <h1>____Bài 10: JavaScript Operators<span class="lessonSubtitle"> (Toán tử)</span>____</h1>
+    <div class="lessonPadding">
+        <div class="defineBox">
+            <h3>Toán tử dành cho toán học và tính toán Logic</h3>
+            <p>Toán tử gán <strong class="operators" style="font-size: 20pt;">=</strong> gán giá trị</p>
+            <p>Toán tử cộng <strong class="operators" style="font-size: 20pt;">+</strong> thêm giá trị</p>
+            <p>Toán tử nhân <strong class="operators" style="font-size: 20pt;">*</strong> nhân giá trị</p>
+            <p>Toán tử so sánh <strong class="operators" style="font-size: 20pt;">></strong> so sánh giá trị</p>
+        </div>
+
+        <h2>JavaScript Assignment<span class="lessonSubtitle"> (toán tử gán)</span></h2>
+        <p>Toán tử gán ( <span class="operators">=</span> ) gán giá trị cho một biến:</p>
+        <div class="exBox">
+            <h3>Ví dụ Gán:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p class="textComment">// Gán giá trị 5 cho x</p>
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p class="textComment">// Gán giá trị 2 cho y</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p class="textComment">// Gán giá trị x + x cho z</p>
+                <p><span class="textKeywordJavascript">let</span> z = x + y;</p>
+            </div>
+        </div>
+
+        <h2>JavaScript Addition<span class="lessonSubtitle"> (Toán tử cộng)</span></h2>
+        <p>Toán tử cộng ( <span class="operators">+</span> ) cộng các số:</p>
+        <div class="exBox">
+            <h3>Toán tử cộng</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2 </span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x + y;</p>
+            </div>
+        </div>
+
+        <h2>JavaScript Multiplication <span class="lessonSubtitle">(toán tử nhân)</span></h2>
+        <p>Toán tử nhân ( <span class="operators">*</span> ) nhân các số:</p>
+        <div class="exBox">
+            <h3>Toán tử nhân</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2 </span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x * y;</p>
+            </div>
+        </div>
+
+        <h2>Types of JavaScript Operators</h2>
+        <p>Có nhiều loại toán tử JavaScript khác nhau:</p>
+        <div class="lessonSubTextPadding">
+            <p>- Toán tử số học</p>
+            <p>- Toán tử gán</p>
+            <p>- Toán tử so sánh</p>
+            <p>- Toán tử Logic</p>
+            <p>- Và hơn thế nữa...</p>
+        </div>
+
+        <h2>JavaScript Arithmetic Operators <span class="lessonSubtitle">(toán tử số học)</span></h2>
+        <p>Toán tử số học được sử dụng để thực hiện phép tính trên các số:</p>
+        <div class="exBox">
+            <h3>Ví dụ về toán tử số học</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> a = <span class="operators">3</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> x = (<span class="operators">100</span> + <span
+                        class="operators">50</span>) * a;</p>
+            </div>
+        </div>
+        <p></p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Phép cộng</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Phép trừ</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Phép nhân</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Luỹ thừa</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Phép chia</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td><strong>Modulu</strong> (Phép chia dữ)</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Tăng</td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Giảm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>JavaScript String Addition <span class="lessonSubtitle">(bổ sung trong string)</span></h2>
+        <p>Dấu <span class="operators">+</span> cũng có thể được sử dụng để thêm (nối) trong <strong>string</strong>:
+        </p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> nameA = <span class="textColorString">"Nguyễn Nam
+                        Trang Linh"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> nameB = <span class="textColorString">"Nguyễn Trà
+                        My"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> nameC = nameA + <span class="textColorString">"
+                        "</span> + nameB;</p>
+            </div>
+        </div>
+        <p>Toán từ <span class="operators">+=</span> cũng có thể được sử dụng để thêm (nối) <strong>string</strong></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> nameA = <span class="textColorString">"Nguyễn Nam
+                        Trang Linh "</span>;</p>
+                <p>nameA += <span class="textColorString">"Chang"</span>;</p>
+            </div>
+            <p>Kết quả của nameA sẽ là: Nguyễn Nam Trang Linh Chang</p>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Khi được sử dụng trên <strong>string</strong> toán tử <span class="operators">+</span> sẽ được gọi là
+                toán tử nối.</p>
+        </div>
+
+        <h2>Adding Strings and Numbers <span class="lessonSubtitle">(Thêm chuỗi và số)</span></h2>
+        <p>Cộng hai số sẽ trả về tổng dưới dạng số như 5 + 5 = 10.</p>
+        <p>Thêm một số và một chuỗi, sẽ trả về tổng dưới dạng một chuỗi được nối như 5 + "5" = "55".</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span> + <span
+                        class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="textColorString">"5"</span> + <span
+                        class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = <span class="textColorString">"hello"</span> +
+                    <span class="operators">5</span>;
+                </p>
+            </div>
+            <p>Kết quả của x sẽ là: <strong>10</strong></p>
+            <p>Kết quả của y sẽ là: <strong>55</strong></p>
+            <p>Kết quả của z sẽ là: <strong>hello5</strong></p>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Nếu bạn cộng một số vào một chuỗi thì kết quả sẽ là một chuỗi!</p>
+        </div>
+
+        <h2>JavaScript Assignment Operators <span class="lessonSubtitle">(toán tử gán)</span></h2>
+        <p>Toán tử gán giá trị cho các biến JavaScript.</p>
+        <p>Toán tử <strong>gán phép cộng</strong> ( <span class="operators">+=</span> ) thêm giá trị vào một biến.
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x += <span class="operators">5</span>;</p>
+                <p><span class="textComment">// Ở đây x sẽ là 15</span>
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same As</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>JavaScript Comparison Operators <span class="lessonSubtitle">(Toán tử so sánh)</span></h2>
+        <p>Toán tử so sánh được sử dụng dể <strong>so sánh hai giá trị</strong>.</p>
+        <p>Toán tử só sánh luôn trả về <span class="operators">true</span> hoặc <span class="operators">false</span>.
+        </p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> result = x > <span class="operators">8</span>;</p>
+                <p><span class="textComment">// Ở đây result sẽ trả về false</span>
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>Bằng</td>
+                    <td>x == 5</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Giá trị bằng nhau và kiểu bằng nhau</td>
+                    <td>x === 5</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Không bằng</td>
+                    <td>x != 5</td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>giá trị không bằng nhau hoặc kiểu không bằng nhau</td>
+                    <td>x !== 5</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Lớn hơn</td>
+                    <td>x > 5</td>
+                </tr>
+                <tr>
+                    <td>
+                        << /td>
+                    <td>Ít hơn</td>
+                    <td>x < 5</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Lớn hơn hoặc bằng</td>
+                    <td>x >= 5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <=< /td>
+                    <td>Ít hơn hoặc bằng</td>
+                    <td>x <= 5</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tất cả các toán tử so sánh ở trên cũng có thể được sử dụng trên <strong>string</strong>:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> textA = <span class="textColorString">"A"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> textB = <span class="textColorString">"B"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> result = textA < textB;</p>
+                        <p><span class="textComment">// Ở đây result sẽ trả về true</span>
+                        </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <h4>Lưu ý:</h4>
+            <p>Các chuỗi được so sánh theo thứ tự bảng chữ cái.</p>
+        </div>
+
+        <h2>JavaScript Logical Operators <span class="lessonSubtitle">(Toán tử Logic)</span></h2>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&&</td>
+                    <td>Logic và</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Logic hoặc</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logic không</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- ==================================================================== -->
