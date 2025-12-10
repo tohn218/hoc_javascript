@@ -1448,7 +1448,7 @@
                 </tr>
                 <tr>
                     <td>
-                        << /td>
+                        < </td>
                     <td>Ít hơn</td>
                     <td>x < 5</td>
                 </tr>
@@ -1459,7 +1459,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <=< /td>
+                        <= </td>
                     <td>Ít hơn hoặc bằng</td>
                     <td>x <= 5</td>
                 </tr>
@@ -1505,6 +1505,265 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <!-- ===============================Bài 11=============================== -->
+
+    <h1>____Bài 10: JavaScript Arithmetic<span class="lessonSubtitle"> (Số học)</span>____</h1>
+    <div class="lessonPadding">
+        <h2>JavaScript Arithmetic Operators <span class="lessonSubtitle"> (Số học)</span></h2>
+        <p>Các toán tử số học thực hiện phép tính trên các số <i>(<strong>literals</strong> or
+                <strong>variables</strong>)</i></p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Phép cộng</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Phép trừ</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Phép nhân</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Luỹ thừa (ES2016)</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Phép chia</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td><strong>Modulu</strong> (Phép chia dữ)</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Tăng</td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Giảm</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Arithmetic Operations</h2>
+        <p>Một phép toán số học điển hình hoạt động trên hai số.</p>
+        <p>Hai số có thể là chữ:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">100</span> + <span
+                        class="operators">50</span>;</p>
+            </div>
+        </div>
+        <p>Hoặc các biến:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = a + b;</p>
+            </div>
+        </div>
+        <p>Hoặc biểu thức</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = ( <span class="operators">100</span> + <span
+                        class="operators">50</span> ) * a;</p>
+            </div>
+        </div>
+
+        <h2>Operators and Operands <span class="lessonSubtitle">(Toán tử và toán hạng)</span></h2>
+        <p>Các số (trong một phép tính số học) được gọi là <strong>toán hạng</strong>.</p>
+        <p>Phép toán (được thực hiện giữa hai toán hạng) được xác định bởi một <strong>toán tử</strong></p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Operand</th>
+                    <th>Operator</th>
+                    <th>Operand</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>+</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Adding <span class="lessonSubtitle">(cộng)</span></h2>
+        <p>Toán tử <strong>cộng</strong> (<span class="operators"> + </span>) cộng các số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x + y; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 7</span></p>
+            </div>
+        </div>
+
+        <h2>Subtracting <span class="lessonSubtitle">(trừ)</span></h2>
+        <p>Toán tử <strong>trừ</strong> (<span class="operators"> - </span>) trừ các số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x - y; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 3</span></p>
+            </div>
+        </div>
+
+        <h2>Multiplying <span class="lessonSubtitle">(nhân)</span></h2>
+        <p>Toán tử <strong>nhân</strong> (<span class="operators"> * </span>) nhân các số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x * y; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 10</span></p>
+            </div>
+        </div>
+
+        <h2>Dividing <span class="lessonSubtitle">(chia)</span></h2>
+        <p>Toán tử <strong>chia</strong> (<span class="operators"> / </span>) chia các số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x / y; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 2.5</span></p>
+            </div>
+        </div>
+
+        <h2>Remainder <span class="lessonSubtitle">(còn lại hay còn được gọi là chia dư)</span></h2>
+        <p>Toán tử <strong>modulus</strong> (<span class="operators"> % </span>) trả về phần dư của phép chia:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">2</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x % y; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 1</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <p>Trong số học, phép chia hai số nguyên tạo ra một <strong>quotient</strong> <i>(thương số)</i> và một
+                <strong>remainder</strong> <i>(phần còn thừa)</i>.
+            </p>
+        </div>
+
+        <h2>Incrementing <span class="lessonSubtitle">(tăng dần)</span></h2>
+        <p>Toán tử <strong>tăng</strong> (<span class="operators"> ++ </span>) tăng số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> x++;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 6</span></p>
+            </div>
+        </div>
+
+        <h2>Decrementing <span class="lessonSubtitle">(giảm dần)</span></h2>
+        <p>Toán tử <strong>giảm</strong> (<span class="operators"> -- </span>) giảm số:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> x--;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả z ở đây sẽ là: 4</span></p>
+            </div>
+        </div>
+
+        <h2>Exponentiation <span class="lessonSubtitle">(luỹ thừa)</span></h2>
+        <p>Toán tử <strong>luỹ thừa</strong> (<span class="operators"> ** </span>) nâng <span
+                style="background-color: yellow;">toán hạng</span> thứ nhất lên luỹ thừa của <span
+                style="background-color: yellow;">toán hạng</span> thứ hai:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = x ** <span class="operators">2</span>; <span
+                        class="textComment" style="margin-left: 50px;">// kết quả z ở đây sẽ là: 25</span></p>
+            </div>
+        </div>
+        <p>x ** y tạo ra kết qủa tương tự như <span class="operators">Math.pow(x,y)</span>:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">5</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> z = Math.pow(x,<span class="operators">2</span>);
+                    <span class="textComment" style="margin-left: 50px;">// kết quả z ở đây sẽ là: 25</span>
+                </p>
+            </div>
+        </div>
+
+        <h2>Operator Precedence <span class="lessonSubtitle">(ưu tiên)</span></h2>
+        <p>Độ ưu tiên của <strong>toán tử</strong> <span style="background-color: yellow;">mô tả thứ tự thực hiện các
+                phép toán</span> trong <strong>biểu thức số học</strong>.</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">100</span> + <span
+                        class="operators">50</span> * <span class="operators">3</span>; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả x ở đây sẽ là: 250</span></p>
+            </div>
+        </div>
+        <p>Ở ví dụ trên, như trong toán học truyền thống, phép nhân được thực hiện trước.</p>
+        <p>Phép nhân (<span class="operators"> * </span>) và phép chia (<span class="operators"> / </span>) có
+            <strong>sự ưu
+                tiên</strong> cao hơn phép cộng (<span class="operators"> + </span>) và phép (<span class="operators"> -
+            </span>).
+        </p>
+        <p>Và (như trong toán học ở trường), thứ tự ưu tiên có thể được thay đổi bằng cách sử dụng dấu <strong
+                style="background-color: yellow;">ngoặc đơn</strong>.</p>
+        <p><span style="background-color: yellow;">Khi sử dụng dấu ngoặc đơn, các phép toán bên trong dấu ngoặc đơn sẽ
+                được tính trước.</span></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = (<span class="operators">100</span> + <span
+                        class="operators">50</span>) * <span class="operators">3</span>; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả x ở đây sẽ là: 450</span></p>
+            </div>
+        </div>
+        <p>Khi <span style="background-color: yellow;">nhiều phép toán có cùng mức độ ưu tiên</span> (như cộng và trừ
+            hoặc nhân và chia), <span style="background-color: yellow;">chúng sẽ được tính từ trái qua phải</span>:</p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">100</span> + <span
+                        class="operators">50</span> - <span class="operators">3</span>; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả x ở đây sẽ là: 147</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <h3>Ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">100</span> / <span
+                        class="operators">50</span> * <span class="operators">3</span>; <span class="textComment"
+                        style="margin-left: 50px;">// kết quả x ở đây sẽ là: 6</span></p>
+            </div>
+        </div>
     </div>
 
     <!-- ==================================================================== -->
