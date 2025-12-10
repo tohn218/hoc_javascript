@@ -1766,6 +1766,395 @@
         </div>
     </div>
 
+    <!-- ===============================Bài 12=============================== -->
+
+    <h1>____Bài 12: JavaScript Assignment<span class="lessonSubtitle"> (Gán giá trị)</span>____</h1>
+    <div class="lessonPadding">
+        <h2>JavaScript Assignment Operators <span class="lessonSubtitle">(Toán tử gán)</span></h2>
+        <p><strong>Toán tử gán giá trị</strong> cho các biến trong javascript. </p>
+        <p>Cho rằng <strong>x = 10</strong> và <strong>y = 5</strong>, bảng dưới đây giải thích các <strong>toán tử
+                gán</strong>:</p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Toán tử</th>
+                    <th>Ví dụ</th>
+                    <th>Tương tự như</th>
+                    <th>Kết quả</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                    <td>x = 5 </td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                    <td>x = 15</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                    <td>x = 50</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                    <td>x = 100000</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                    <td>x = 2</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                    <td>x = 0</td>
+                </tr>
+                <tr>
+                    <td>:</td>
+                    <td>x : 45</td>
+                    <td>size.x = 45</td>
+                    <td>x = 45</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Logical Assignment Operators <span class="lessonSubtitle">(Toán tử gán Logic)</span></h2>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Toán tử</th>
+                    <th>Ví dụ</th>
+                    <th>Kết quả</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&&=</td>
+                    <td>true &&= 10</td>
+                    <td>x = 10</td>
+                </tr>
+                <tr>
+                    <td>||=</td>
+                    <td>false ||= 10</td>
+                    <td>x = 10</td>
+                </tr>
+                <tr>
+                    <td>??=</td>
+                    <td>null ??= 10</td>
+                    <td>x = 10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>The = Operator</h2>
+        <p><strong>Toán tử gán đơn giản</strong>, gán một giá trị đơn giản cho một biến.</p>
+        <div class="exBox">
+            <h3>Gán đơn giản Examples:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây kết quả x sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">50</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span> + y; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây kết quả x sẽ là: 60</span></p>
+            </div>
+        </div>
+
+        <h2>The += Operator <span class="lessonSubtitle">(gán phép cộng)</span></h2>
+        <p><strong>Toán tử gán phép cộng</strong> thêm một giá trị vào một biến.</p>
+        <div class="exBox">
+            <h3>Gán phép cộng ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x += <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả x sẽ là: 15</span></p>
+            </div>
+        </div>
+
+        <h2>The -= Operator <span class="lessonSubtitle">(gán phép trừ)</span></h2>
+        <p><strong>Toán tử gán phép trừ</strong> trừ một giá trị từ một biến.</p>
+        <div class="exBox">
+            <h3>Gán phép trừ ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x -= <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả x sẽ là: 5</span></p>
+            </div>
+        </div>
+
+        <h2>The *= Operator <span class="lessonSubtitle">(gán phép nhân)</span></h2>
+        <p><strong>Toán tử gán phép nhân</strong> nhân một biến.</p>
+        <div class="exBox">
+            <h3>Gán phép nhân ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x *= <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả x sẽ là: 50</span></p>
+            </div>
+        </div>
+
+        <h2>The **= Operator <span class="lessonSubtitle">(gán luỹ thừa)</span>
+        </h2>
+        <p><strong>Toán tử gán luỹ thừa</strong> nhân một biến.</p>
+        <div class="exBox">
+            <h3>Gán luỹ thừa ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x **= <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây kết quả x sẽ là: 100000</span></p>
+            </div>
+        </div>
+
+        <h2>The /= Operator <span class="lessonSubtitle">(gán ghép chia)</span>
+        </h2>
+        <p><strong>Toán tử gán phép chia</strong>, chia một biến.</p>
+        <div class="exBox">
+            <h3>Gán phép chia ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x /= <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây kết quả x sẽ là: 2</span></p>
+            </div>
+        </div>
+
+        <h2>The %= Operator <span class="lessonSubtitle">(gán phần dư)</span>
+        </h2>
+        <p><strong>Toán tử gán phần dư</strong>, gán phần dư cho một biến.</p>
+        <div class="exBox">
+            <h3>Gán phần dư ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p> x %= <span class="operators">5</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây kết quả x sẽ là: 0</span></p>
+            </div>
+        </div>
+
+        <h2>String Assignment <span class="lessonSubtitle">(gán string)</span></h2>
+        <p>Hai toán tử gán có thể gán giá trị cho chuỗi.</p>
+        <p><strong>Toán tử gán đơn giản</strong>, gán một giá trị đơn giản cho một <strong>string</strong>.</p>
+        <p><strong>Toán tử gán bổ sung</strong>, thêm một giá trị vào một <strong>string</strong>.</p>
+
+        <h2>The = Operator</h2>
+        <p><strong>Toán tử gán đơn giản</strong>, gán một giá trị đơn giản cho một biến.</p>
+        <div class="exBox">
+            <h3>Gán đơn giản ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> text = <span class="textColorString">"Hello"</span>;
+                    <span class="textComment" style="margin-left: 50px;">// Ở đây kết quả x sẽ là: Hello</span>
+                </p>
+            </div>
+        </div>
+
+        <h2>The += Operator <span class="lessonSubtitle">(gán phép cộng)</span></h2>
+        <p><strong>Toán tử gán phép cộng</strong> cũng có thể được sử dụng để thêm <strong>string</strong>.</p>
+        <div class="exBox">
+            <h3>Gán phép cộng ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> text = <span class="textColorString">"Hello"</span>;
+                    text += <span class="textColorString">" world"</span>;<span class="textComment"
+                        style="margin-left: 50px;">// Ở đây
+                        kết quả x sẽ là: Hello world</span></p>
+            </div>
+        </div>
+
+        <h2>The &&= Operator <span class="lessonSubtitle">(toán tử gán logic và)</span></h2>
+        <p><strong>Toán tử gán Logic và</strong> được sử dụng giữa hai giá trị.</p>
+        <p>Nếu giá trị đầu tiên là <span class="operators">true</span> thì <span style="background-color: yellow;">giá
+                trị thứ hai sẽ được gán.</span></p>
+        <div class="exBox">
+            <h3>Gán Logic và ví dụ:</h3>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">true</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">false</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: false</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">1</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">0</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 0</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span
+                        class="textKeywordJavascript">undefined</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: undefined</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">null</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x &&= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: null</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <p>Toán tử <span class="operators">&&=</span> <i>(Logic và)</i> là một tính năng của ES2020</p>
+        </div>
+
+        <h2>The ||= Operator <span class="lessonSubtitle">(gán logic OR)</span></h2>
+        <p><strong>Toán tử gán logic OR</strong> được sử dụng giữa hai giá trị.</p>
+        <p>Nếu giá trị đầu tiên là <span class="operators">false</span> thì giá trị thứ hai sẽ được gán.</p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">false</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x ||= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">true</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x ||= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: true</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">null</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x ||= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span
+                        class="textKeywordJavascript">undefined</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> y = x ||= <span class="operators">10</span>; <span
+                        class="textComment" style="margin-left: 50px;">// Ở đây
+                        kết quả y sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <p>Toán tử <span class="operators">||=</span> <i>(Logic OR)</i> là một tính năng của ES2020</p>
+        </div>
+
+        <h2>The ??= Operator <span class="lessonSubtitle">(gán hợp nhất Nullish)</span></h2>
+        <p><strong>Toán tử gán hợp nhất Nullish</strong> được sử dụng giữa hai giá trị.</p>
+        <p>Nếu giá trị đầu tiên là <span class="textKeywordJavascript">undefined</span> hoặc <span
+                class="textKeywordJavascript">null</span> thì giá trị thứ hai được gán.</p>
+        <div class="exBox">
+            <h2>gán hợp nhất Nullish ví dụ:</h2>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x;
+                </p>
+                <p> x ??= <span class="operators">10</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây
+                        kết quả x sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">0</span>;
+                </p>
+                <p> x ??= <span class="operators">10</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây
+                        kết quả x sẽ là: 0</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">null</span>;
+                </p>
+                <p> x ??= <span class="operators">10</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây
+                        kết quả x sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span
+                        class="textKeywordJavascript">undefined</span>;
+                </p>
+                <p> x ??= <span class="operators">10</span>; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây
+                        kết quả x sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> x = <span class="operators">10</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> y = <span class="operators">5</span>;</p>
+                <p> x ??= y; <span class="textComment" style="margin-left: 50px;">// Ở
+                        đây
+                        kết quả x sẽ là: 10</span></p>
+            </div>
+        </div>
+        <p></p>
+        <div class="noteBox">
+            <p>Toán tử <span class="operators">??=</span> <i>(gán hợp nhất Nullish)</i> là một tính năng của ES2020</p>
+        </div>
+
+        <h2>The Spread (...) Operator <span class="lessonSubtitle">(chia các lần lặp)</span></h2>
+        <p>Toán tử <span class="operators">...</span>chia các lần lặp <span style="background-color: yellow;">thành các
+                phần tử riêng lẻ</span>.</p>
+    </div>
+
     <!-- ==================================================================== -->
 
     <div id="footer"></div>
