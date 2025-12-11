@@ -14,3 +14,14 @@ function showAlertMessage() {
 function showConsoleLog() {
     console.log("Bạn vừa thực hiện hành động show console log bằng console");
 }
+function handleAge() {
+    let voteable;
+    let age = Number(document.getElementById("age").value);
+    if (isNaN(age)) {
+        voteable = "Dữ liệu nhận vào không phải là một số.";
+        document.getElementById("id_result_text_age").innerHTML = voteable;
+    } else {
+        voteable = (age < 18) ? "Bạn chưa đủ tuổi" : "Bạn đã đủ tuối";
+        document.getElementById("id_result_text_age").innerHTML = voteable + " bỏ phiếu";
+    }
+}
