@@ -2042,10 +2042,11 @@
             <p>Toán tử <span class="operators">&&=</span> <i>(Logic và)</i> là một tính năng của ES2020</p>
         </div>
 
-        <h2>The ||= Operator <span class="lessonSubtitle">(gán logic OR)</span></h2>
+        <h2>The ||= Operator <span class="lessonSubtitle">(toán tử gán logic OR)</span></h2>
         <p><strong>Toán tử gán logic OR</strong> được sử dụng giữa hai giá trị.</p>
         <p>Nếu giá trị đầu tiên là <span class="operators">false</span> thì giá trị thứ hai sẽ được gán.</p>
         <div class="exBox">
+            <h3>Gán Logic OR ví dụ:</h3>
             <div class="exGreen">
                 <p><span class="textKeywordJavascript">let</span> x = <span class="textKeywordJavascript">false</span>;
                 </p>
@@ -2090,7 +2091,7 @@
             <p>Toán tử <span class="operators">||=</span> <i>(Logic OR)</i> là một tính năng của ES2020</p>
         </div>
 
-        <h2>The ??= Operator <span class="lessonSubtitle">(gán hợp nhất Nullish)</span></h2>
+        <h2>The ??= Operator <span class="lessonSubtitle">(toán tử gán hợp nhất Nullish)</span></h2>
         <p><strong>Toán tử gán hợp nhất Nullish</strong> được sử dụng giữa hai giá trị.</p>
         <p>Nếu giá trị đầu tiên là <span class="textKeywordJavascript">undefined</span> hoặc <span
                 class="textKeywordJavascript">null</span> thì giá trị thứ hai được gán.</p>
@@ -2150,9 +2151,236 @@
             <p>Toán tử <span class="operators">??=</span> <i>(gán hợp nhất Nullish)</i> là một tính năng của ES2020</p>
         </div>
 
-        <h2>The Spread (...) Operator <span class="lessonSubtitle">(chia các lần lặp)</span></h2>
-        <p>Toán tử <span class="operators">...</span>chia các lần lặp <span style="background-color: yellow;">thành các
+        <h2>The Spread (...) Operator <span class="lessonSubtitle">(toán tử chia các lần lặp)</span></h2>
+        <p>Toán tử <span class="operators">...</span> chia các lần lặp <span style="background-color: yellow;">thành các
                 phần tử riêng lẻ</span>.</p>
+    </div>
+
+    <!-- ===============================Bài 13=============================== -->
+
+    <h1>____Bài 13: JavaScript Comparison<span class="lessonSubtitle"> (so sánh)</span>____</h1>
+    <div class="lessonPadding">
+        <div class="defineBox">
+            <h2>Toán tử so sánh</h2>
+            <p>Toán tử so sánh được sử dụng để <strong>so sánh hai giá trị</strong>.</p>
+            <p>Toán tử so sánh luôn trả về <span class="operators">true</span> hoặc <span
+                    class="operators">false</span>.</p>
+        </div>
+        <p>Cho rằng <span class="operators">x = 5</span>, bảng dưới đây giải thích các toán tử so sánh:</p>
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Toán tử</th>
+                    <th>Miêu tả</th>
+                    <th>So sánh</th>
+                    <th>Trả về</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>equal to</td>
+                    <td>x == 8</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>x == 5</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>x == "5"</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>equal value and equal type</td>
+                    <td>x === 5</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>x === "5"</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>not equal</td>
+                    <td>x != 8</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>not equal value or not equal type</td>
+                    <td>x !== 5</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>x !== "5"</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>x !== "8"</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>greater than</td>
+                    <td>x > 8</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>
+                        < </td>
+                    <td>less than</td>
+                    <td>x < 8</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td> >= </td>
+                    <td>greater than or equal to</td>
+                    <td>x >= 8</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>
+                        <= </td>
+                    <td>less than or equal to</td>
+                    <td>x <= 8</td>
+                    <td>true</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Toán tử so sánh có thể được sử dụng trong câu lệnh điều kiện để so sánh các giá trị và thực hiện hành động
+            tuỳ thuộc vào kết quả:</p>
+        <div class="exBox">
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">if</span> (age < <span class="operators">18</span>) text = <span
+                            class="textColorString">"Hello Nguyễn Nam Trang Linh"</span>;</p>
+            </div>
+        </div>
+
+        <h2>JavaScript String Comparison <span class="lessonSubtitle">(So sánh string)</span></h2>
+        <p>Tất cả các toán tử so sánh ở trên cũng có thể được sử dụng trên <strong>strings</strong>:</p>
+        <div class="exBox">
+            <h2>Ví dụ:</h2>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> text1 = <span class="textColorString">"A"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> text2 = <span class="textColorString">"B"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> result = text1 < text2; <span class="textComment"
+                        style="margin-left: 50px;">// Ở đây result giá trị sẽ là: true</span>;</p>
+            </div>
+        </div>
+        <p>Lưu ý rằng các <strong>strings</strong> được so sánh theo thứ tự bảng chữ cái:</p>
+        <div class="exBox">
+            <h2>Ví dụ:</h2>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> text1 = <span class="textColorString">"20"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> text2 = <span class="textColorString">"5"</span>;</p>
+                <p><span class="textKeywordJavascript">let</span> result = text1 < text2; <span class="textComment"
+                        style="margin-left: 50px;">// Ở đây result giá trị sẽ là: true</span>;</p>
+            </div>
+        </div>
+
+        <h2>Comparing Different Types</h2>
+        <p>So sánh dữ liệu của các loại khác nhau có thể cho <span style="background-color: yellow;">kết quả không mong
+                muốn</span>.</p>
+        <p>Khi so sánh một <strong>string</strong> với một <strong>number</strong>, JavaScript sẽ <strong>converts
+                string</strong> thành <strong>number</strong> khi thực hiện so sánh.</p>
+        <p>Một <strong>string</strong> empty <strong>converts</strong> thành <span class="operators">0</span>.</p>
+        <p>Một <strong>string</strong> không phải là số <strong>converts</strong> thành <span class="operators">
+                NaN</span> điều đó luôn luôn <span class="operators">false</span>.</p>
+
+        <table class="DataTypesTable">
+            <thead>
+                <tr>
+                    <th>Trường hợp</th>
+                    <th>Giá trị</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2 < 12</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>2 < "12" </td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>2 < "John" </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>2 > "John" </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>2 == "John" </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>"2" < "12" </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>"2" > "12" </td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>"2" == "12" </td>
+                    <td>false</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Khi so sánh hai <strong>string</strong>, <span class="textColorString">"2"</span> sẽ lớn hơn <span
+                class="textColorString">"12"</span>.</p>
+        <p>Theo bảng chữ cái 1 nhỏ hơn 21.</p>
+        <p>Để đảm bảo kết quả phù hợp, các biến phải <strong>converted</strong> thành loại phù hợp trước khi so sánh:
+        </p>
+        <p>Hãy xem ví dụ <strong>TextField</strong> dưới đây khi chúng ta nhập dữ liệu vào ô:</p>
+        <input id="age" placeholder="Nhập số tuổi để bỏ phiếu" class="InputDecoration" />
+        <button onclick="handleAge()" class="ButtonDecoration">Hãy thử</button>
+        <p><strong>Kết quả</strong>: <span id="id_result_text_age"></span></p>
+        <div class="exBox">
+            <h2>code:</h2>
+            <div class="exGreen">
+                <p><span class="textKeywordJavascript">let</span> <span style="color: darkturquoise;">voteable</span>;
+                </p>
+                <p><span class="textKeywordJavascript">let</span> <span style="color: darkturquoise;">age</span> =
+                    Number(<span style="color: darkturquoise;">document</span>.<span
+                        style="color:sandybrown;">getElementById</span>(<span
+                        class="textColorString">"age"</span>).<span style="color: darkturquoise;">value</span>);</p>
+                <p><span class="textKeywordJavascript">if </span>(<span style="color: sandybrown;">isNaN</span>(<span
+                        style="color: darkturquoise;">age</span>)) {</p>
+                <p><span style="color: darkturquoise; margin-left: 30px;">voteable</span> = <span
+                        class="textColorString">'Dữ liệu nhập vào không phải là một số'</span>;</p>
+                <p><span style="color: darkturquoise; margin-left: 30px;">document</span>.<span
+                        style="color: sandybrown;">getElementById</span>(<span class="textColorString">"id_result_text_age"</span>).<span
+                        style="color: darkturquoise;">innerHTML</span> = <span
+                        style="color: darkturquoise;">voteable</span>;</p>
+                <p>} <span class="textKeywordJavascript">else</span> {</p>
+                <p><span style="color: darkturquoise; margin-left: 30px;">voteable</span> = (<span
+                        style="color: darkturquoise;">age</span>
+                    < <span class="operators">18</span>) ? <span class="textColorString">'Bạn chưa đủ tuổi'</span> :
+                        <span class="textColorString">'Bạn đã đủ tuối'</span>;
+                </p>
+                <p><span style="color: darkturquoise; margin-left: 30px;">document</span>.<span
+                        style="color: sandybrown;">getElementById</span>(<span class="textColorString">"id_result_text_age"</span>).<span
+                        style="color: darkturquoise;">innerHTML</span> = <span
+                        style="color: darkturquoise;">voteable</span> + <span class="textColorString">' bỏ
+                        phiếu'</span>;</p>
+                <p>}</p>
+            </div>
+        </div>
     </div>
 
     <!-- ==================================================================== -->
